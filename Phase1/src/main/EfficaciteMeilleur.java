@@ -1,5 +1,7 @@
 package main;
 
+import java.util.List;
+
 public class EfficaciteMeilleur {
 
 	public static void main(String[] args) {
@@ -7,13 +9,14 @@ public class EfficaciteMeilleur {
 		String texte = "Il fait beau aujourd’hui comme en aout";
 
 		// Ordre de classement des mots
-		char[] ordre = {'f', 'I', 'z', 'u', 'k', 'a', 'b', 'o'};
+		List<Character> ordre = List.of('f', 'I', 'z', 'u', 'k', 'a', 'b', 'o');
+
 
 		long debut = System.nanoTime(); // Enregistrer le temps de début (au moment de l'éxecution du code)
 		// System.currentTimeMillis() // Pour calculer le temps en Milliseconde
 
 
-		String[] motsClasses = classifyText(texte, ordre);
+		List<String> motsClasses = classifyText(texte, ordre);
 
 		long fin = System.nanoTime(); // Enregistrer le temps de fin (une fois le code exécuté)
 		long tempsExecution = fin - debut; // Calculer le temps écoulé en nanoseconde
@@ -21,9 +24,9 @@ public class EfficaciteMeilleur {
 
 		//Mise en forme de l'output
 		System.out.print("[");
-		for (int i = 0; i < motsClasses.length; i++) {
-			System.out.print("\"" + motsClasses[i] + "\"");
-			if (i < motsClasses.length - 1) {
+		for (int i = 0; i < motsClasses.size(); i++) {
+			System.out.print("\"" + motsClasses.get(i) + "\"");
+			if (i < motsClasses.size() - 1) {
 				System.out.print(", ");
 			}
 		}
@@ -40,19 +43,13 @@ public class EfficaciteMeilleur {
 	 * @param ordre l'ordre de classement des mots
 	 * @return un tableau de mots classés selon l'ordre spécifié
 	 */
-	public static String[] classifyText(String texte, char[] ordre) {
-		// Remplace le caractère "'" par un espace pour diviser correctement les mots
-		texte = texte.replace("’", " ");
-
-		// Sépare le texte en mots en utilisant l'espace comme séparateur
-		String[] mots = texte.split(" ");
-
-		// Trie les mots selon l'ordre spécifié en utilisant la méthode triParOrdre
-		triParOrdre(mots, ordre);
-
-		// Retourne les mots triés
-		return mots;
-	}
+	public static List<String> classifyText(String texte, List<Character> ordre) {
+        texte = texte.replace("'", " ");
+        texte = texte.replace(",", "");
+        String[] mots = texte.split(" ");
+        triParOrdre(mots, ordre);
+        return List.of(mots);
+    }
 
 
 
@@ -61,7 +58,7 @@ public class EfficaciteMeilleur {
 	 * @param mots les mots à trier
 	 * @param ordre l'ordre de classement des mots
 	 */
-	private static void triParOrdre(String[] mots, char[] ordre) {
+	private static void triParOrdre(String[] mots, List<Character> ordre) {
 
 		// Parcourt tous les mots, à l'exception du dernier
 		for (int i = 0; i < mots.length - 1; i++) {
@@ -90,20 +87,20 @@ public class EfficaciteMeilleur {
 	 * @param letter la lettre à chercher
 	 * @return l'index de la lettre dans l'ordre spécifié, ou la longueur de l'ordre si la lettre n'est pas présente
 	 */
-	private static int getOrderIndex(char[] ordre, char letter) {
+	private static int getOrderIndex(List<Character> ordre, char letter) {
 
 		// Parcourt tous les éléments de l'array "ordre"
-		for (int i = 0; i < ordre.length; i++) {
+		for (int i = 0; i < ordre.size(); i++) {
 
 			// Vérifie si l'élément actuel correspond à la lettre recherchée
-			if (ordre[i] == letter) {
+			if (ordre.get(i) == letter) {
 
 				return i; // Renvoie l'indice de l'élément correspondant
 			}
 		}
 
 		// Si la lettre n'est pas présente dans "ordre", on la place à la fin
-		return ordre.length;
+		return ordre.size();
 	}
 
 }
