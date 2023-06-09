@@ -1,106 +1,88 @@
 package main;
 
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class EfficaciteMeilleur {
 
-	public static void main(String[] args) {
-		// Texte à classer
-		String texte = "Il fait beau aujourd’hui comme en aout";
-
-		// Ordre de classement des mots
-		List<Character> ordre = List.of('f', 'I', 'z', 'u', 'k', 'a', 'b', 'o');
-
-
-		long debut = System.nanoTime(); // Enregistrer le temps de début (au moment de l'éxecution du code)
-		// System.currentTimeMillis() // Pour calculer le temps en Milliseconde
-
-
-		List<String> motsClasses = classifyText(texte, ordre);
-
-		long fin = System.nanoTime(); // Enregistrer le temps de fin (une fois le code exécuté)
-		long tempsExecution = fin - debut; // Calculer le temps écoulé en nanoseconde
-		double tempsExecutionMillis = (double) tempsExecution / 1_000_000; // Conversion en millisecondes
-
-		//Mise en forme de l'output
-		System.out.print("[");
-		for (int i = 0; i < motsClasses.size(); i++) {
-			System.out.print("\"" + motsClasses.get(i) + "\"");
-			if (i < motsClasses.size() - 1) {
-				System.out.print(", ");
-			}
-		}
-		System.out.println("]");
-
-		System.out.println("Le temps d'exécution est de : " + tempsExecutionMillis + " millisecondes.");
-
-
-	}
-
-	/**
-	 * Classe les mots du texte en fonction de l'ordre spécifié.
-	 * @param texte le texte à classer
-	 * @param ordre l'ordre de classement des mots
-	 * @return un tableau de mots classés selon l'ordre spécifié
-	 */
-	public static List<String> classifyText(String texte, List<Character> ordre) {
-        texte = texte.replace("'", " ");
-        texte = texte.replace(",", "");
-        String[] mots = texte.split(" ");
-        triParOrdre(mots, ordre);
-        return List.of(mots);
+    public static List<String> solution(String texte, List<Character> ordre) {
+        Map<Character, Integer> ordreMap = creerMapOrdre(ordre);
+        List<String> mots = extraireMots(texte);
+        triRapide(mots, ordreMap, 0, mots.size() - 1);
+        return mots;
     }
 
+    private static Map<Character, Integer> creerMapOrdre(List<Character> ordre) {
+        Map<Character, Integer> ordreMap = new HashMap<>();
+        for (int i = 0; i < ordre.size(); i++) {
+            ordreMap.put(ordre.get(i), i);
+        }
+        return ordreMap;
+    }
 
+    private static List<String> extraireMots(String texte) {
+        List<String> mots = new ArrayList<>();
+        StringBuilder motCourant = new StringBuilder();
 
-	/**
-	 * Trie les mots en fonction de l'ordre spécifié.
-	 * @param mots les mots à trier
-	 * @param ordre l'ordre de classement des mots
-	 */
-	private static void triParOrdre(String[] mots, List<Character> ordre) {
+        for (int i = 0; i < texte.length(); i++) {
+            char c = texte.charAt(i);
+            if (Character.isLetterOrDigit(c)) {
+                motCourant.append(c);
+            } else if (motCourant.length() > 0) {
+                mots.add(motCourant.toString());
+                motCourant.setLength(0);
+            }
+        }
 
-		// Parcourt tous les mots, à l'exception du dernier
-		for (int i = 0; i < mots.length - 1; i++) {
+        if (motCourant.length() > 0) {
+            mots.add(motCourant.toString());
+        }
 
-			// Parcourt les mots restants à partir du mot suivant "i"
-			for (int j = i + 1; j < mots.length; j++) {
+        return mots;
+    }
 
-				// Vérifie si l'ordre des mots doit être inversé en comparant les premières lettres
-				if (getOrderIndex(ordre, mots[j].charAt(0)) < getOrderIndex(ordre, mots[i].charAt(0))) {
+    private static void triRapide(List<String> mots, Map<Character, Integer> ordreMap, int bas, int haut) {
+        if (bas < haut) {
+            int pivotIndex = partitionner(mots, ordreMap, bas, haut);
+            triRapide(mots, ordreMap, bas, pivotIndex - 1);
+            triRapide(mots, ordreMap, pivotIndex + 1, haut);
+        }
+    }
 
-					// Échange les positions des mots si l'ordre n'est pas respecté
-					String temp = mots[i];
-					// Échange les positions du mot actuel avec celui d'aprés
-					mots[i] = mots[j];
-					// Le mot d'aprés prend la position du mot actuel
-					mots[j] = temp;
-				}
-			}
-		}
-	}
+    private static int partitionner(List<String> mots, Map<Character, Integer> ordreMap, int bas, int haut) {
+        String pivot = mots.get(haut);
+        int i = bas - 1;
 
+        for (int j = bas; j < haut; j++) {
+            if (comparerMots(mots.get(j), pivot, ordreMap) <= 0) {
+                i++;
+                echanger(mots, i, j);
+            }
+        }
 
-	/**
-	 * Retourne l'index de la lettre dans l'ordre spécifié.
-	 * @param ordre l'ordre de classement des lettres
-	 * @param letter la lettre à chercher
-	 * @return l'index de la lettre dans l'ordre spécifié, ou la longueur de l'ordre si la lettre n'est pas présente
-	 */
-	private static int getOrderIndex(List<Character> ordre, char letter) {
+        echanger(mots, i + 1, haut);
+        return i + 1;
+    }
 
-		// Parcourt tous les éléments de l'array "ordre"
-		for (int i = 0; i < ordre.size(); i++) {
+    private static void echanger(List<String> mots, int i, int j) {
+        String temp = mots.get(i);
+        mots.set(i, mots.get(j));
+        mots.set(j, temp);
+    }
 
-			// Vérifie si l'élément actuel correspond à la lettre recherchée
-			if (ordre.get(i) == letter) {
-
-				return i; // Renvoie l'indice de l'élément correspondant
-			}
-		}
-
-		// Si la lettre n'est pas présente dans "ordre", on la place à la fin
-		return ordre.size();
-	}
-
+    private static int comparerMots(String mot1, String mot2, Map<Character, Integer> ordreMap) {
+        int minLength = Math.min(mot1.length(), mot2.length());
+        for (int i = 0; i < minLength; i++) {
+            char c1 = mot1.charAt(i);
+            char c2 = mot2.charAt(i);
+            int index1 = ordreMap.getOrDefault(c1, ordreMap.size());
+            int index2 = ordreMap.getOrDefault(c2, ordreMap.size());
+            if (index1 != index2) {
+                return Integer.compare(index1, index2);
+            }
+        }
+        return Integer.compare(mot1.length(), mot2.length());
+    }
 }
