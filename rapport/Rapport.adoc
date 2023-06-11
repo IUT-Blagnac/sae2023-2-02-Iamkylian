@@ -1,18 +1,19 @@
-= Rapport - réalisé par *Kylian Gachet (1A)*
+= Notation Algorithme - réalisé par *Kylian Gachet (1A)*
 
 
 |=========================================================================================================
 | Evaluation  | Algo                | Lisibilité  | Qualité  | Temps d’exécution  | Complexité  | Sobriété
-| 5           | simplicite-8.py    | {plus}{plus}{plus}{plus}        | {plus}{plus}{plus}{plus}{plus}    | N/A                | N/A         | N/A
-| 4          | simplicite-114.py    | {plus}{plus}{plus}{plus}{plus}       | {plus}{plus}{plus}     | N/A                | N/A         | N/A
-| 3           | simplicite-37.py  | {plus}{plus}{plus}         | {plus}{plus}{plus}      | N/A                | N/A         | N/A
+| 5           | 2-simplicite-meilleur.c    | {plus}{plus}{plus}{plus}        | {plus}{plus}{plus}{plus}{plus}    | N/A                | N/A         | N/A
+| 4          | 3-simplicitemeilleur.java    | {plus}{plus}{plus}{plus}{plus}       | {plus}{plus}{plus}     | N/A                | N/A         | N/A
+| 3           | 28-Simplicité-pire.java  | {plus}{plus}{plus}         | {plus}{plus}{plus}      | N/A                | N/A         | N/A
 | 2           | 	
-simplicite-86.py  | {plus}           | {plus}{plus}{plus}{plus}     | N/A                | N/A         | N/A
-| 5           | efficacite-18.c   | N/A         | N/A      | {plus}{plus}{plus}{plus}{plus}               | {plus}{plus}{plus}{plus}     | N/A
-| 4           | efficacite112.java     | N/A         | N/A      | {plus}{plus}{plus}             | {plus}{plus}{plus}{plus}          | N/A
-| 3           | efficacite-36.java | N/A         | N/A      | {plus}{plus}{plus}                | {plus}{plus}{plus}         | N/A
-| 2           | efficacite-75.java    | N/A         | N/A      | {plus}{plus}                 | {plus}        | N/A
-| 5           | sobriété-67.java     | N/A         | N/A      | N/A                 | N/A        | {plus}{plus}{plus}{plus}
-| 4           | sobriété-57.c      | N/A         | N/A      | N/A              | N/A         | {plus}{plus}{plus}
-| 1           | sobriété-166.c   | N/A         | N/A      | N/A                  | N/A         | {plus}{plus}
+7-efficacite_pire.java  | {plus}           | {plus}{plus}{plus}{plus}     | N/A                | N/A         | N/A
+| 5           | 20-efficacite-pire.java   | N/A         | N/A      | {plus}{plus}{plus}{plus}{plus}               | {plus}{plus}{plus}{plus}     | N/A
+| 4           | 22-Efficacite-Meilleur.java     | N/A         | N/A      | {plus}{plus}{plus}             | {plus}{plus}{plus}{plus}          | N/A
+| 3           | 37-simplicite-pire.java | N/A         | N/A      | {plus}{plus}{plus}                | {plus}{plus}{plus}         | N/A
+| 2           | 57-efficacite-meilleur.java    | N/A         | N/A      | {plus}{plus}                 | {plus}        | N/A
+| 5           | 5-sobriete-pire.java    | N/A         | N/A      | N/A                 | N/A        | {plus}{plus}{plus}{plus}
+| 4           |   22-Sobriété-Pire.java     | N/A         | N/A      | N/A              | N/A         | {plus}{plus}{plus}
+| 1           | 36-sobriete-meilleur.java   | N/A         | N/A      | N/A                  | N/A         | {plus}{plus}
+| 1           | 58-sobriete-meilleure.java   | N/A         | N/A      | N/A                  | N/A         | {plus}{plus}
 |=========================================================================================================
