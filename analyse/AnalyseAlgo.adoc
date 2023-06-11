@@ -1,4 +1,4 @@
-= Rapport d'évaluation - 
+= Analyse Algorithme - réalisé par *Kylian Gachet (1A)* et *Illan Gabarra (1A)*
 :toc:
 :toc-title: Sommaire
 //:toc: preamble
@@ -15,6 +15,7 @@
 |1.0 | 21 juin 2023 | G1A : Kylian, Illan | Exploration algorithmique d'un probléme
 |=== 
 
+{empty} +
 
 *NOTATION*
 |===
@@ -31,6 +32,7 @@
 |===
 En cas d'ex-aequo, même note. (5/5/3/2 par exemple).
 
+{empty} +
 
 == Présentation des outils d'évaluation
 

@@ -45,11 +45,11 @@ Merci à mailto:saadialbane@gmail.com:[Saadia Albane] pour l'idée du problème 
 
 === De la solution...
 
-* LAST NAME : DOE
-* First name : John
+* LAST NAME : GACHET
+* First name : Kylian
 * TD group : 
-- [ ] 1
-- [x] 2
+- [x] 1
+- [ ] 2
 - [ ] 3
 - [ ] 4
 

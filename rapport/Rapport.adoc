@@ -1,0 +1,18 @@
+= Rapport - réalisé par *Kylian Gachet (1A)*
+
+
+|=========================================================================================================
+| Evaluation  | Algo                | Lisibilité  | Qualité  | Temps d’exécution  | Complexité  | Sobriété
+| 5           | simplicite-8.py    | {plus}{plus}{plus}{plus}        | {plus}{plus}{plus}{plus}{plus}    | N/A                | N/A         | N/A
+| 4          | simplicite-114.py    | {plus}{plus}{plus}{plus}{plus}       | {plus}{plus}{plus}     | N/A                | N/A         | N/A
+| 3           | simplicite-37.py  | {plus}{plus}{plus}         | {plus}{plus}{plus}      | N/A                | N/A         | N/A
+| 2           | 	
+simplicite-86.py  | {plus}           | {plus}{plus}{plus}{plus}     | N/A                | N/A         | N/A
+| 5           | efficacite-18.c   | N/A         | N/A      | {plus}{plus}{plus}{plus}{plus}               | {plus}{plus}{plus}{plus}     | N/A
+| 4           | efficacite112.java     | N/A         | N/A      | {plus}{plus}{plus}             | {plus}{plus}{plus}{plus}          | N/A
+| 3           | efficacite-36.java | N/A         | N/A      | {plus}{plus}{plus}                | {plus}{plus}{plus}         | N/A
+| 2           | efficacite-75.java    | N/A         | N/A      | {plus}{plus}                 | {plus}        | N/A
+| 5           | sobriété-67.java     | N/A         | N/A      | N/A                 | N/A        | {plus}{plus}{plus}{plus}
+| 4           | sobriété-57.c      | N/A         | N/A      | N/A              | N/A         | {plus}{plus}{plus}
+| 1           | sobriété-166.c   | N/A         | N/A      | N/A                  | N/A         | {plus}{plus}
+|=========================================================================================================
