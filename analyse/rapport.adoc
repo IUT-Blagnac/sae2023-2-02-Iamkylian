@@ -18,7 +18,7 @@
 
 *NOTATION*
 |===
-|*Cas*|*Points*
+|*Cas*|*Sanction*
 |Ne compile/s'exécute pas|note finale divisée par 2
 |Ne correspond pas à une classe Exercice (cas des main ou des zip)|note finale divisée par 2
 |Non respect de la nomenclature précise|-1
