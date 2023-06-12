@@ -2,6 +2,40 @@
 
 
 |=========================================================================================================
+| Note  | Algo                | Commentaire 
+| 9/20           | 2-simplicite-meilleur.c    | Ne correspond pas à une classe Exercice (cas des main ou des zip) + 
++ Passe tous les tests fournis initialement      
+
+| 1.5/20          | 3-simplicitemeilleur.java    | Ne correspond pas à une classe Exercice (cas des main ou des zip) + 
++ Non respect de la nomenclature précise + 
++ Ne fonctionne pas (retour eronné, ou pas du bon type attendu) 
+
+| 9/20           | 28-Simplicité-pire.java  | Non respect de la nomenclature précise + 
++ Fonctionne mais ne passe pas les tests fournis initialement
+
+| 9/20           |  37-simplicite-pire.java | Non respect de la nomenclature précise + 
++ Fonctionne mais ne passe pas les tests fournis initialement  
+
+| /20           |  7-efficacite_pire.java  | N/A   
+
+| /20           |  20-efficacite-pire.java  | N/A    
+
+| /20           | 22-Efficacite-Meilleur.java | N/A        
+
+| /20           | 57-efficacite-meilleur.java    | N/A  
+
+| /20           | 5-sobriete-pire.java    | N/A      
+
+| /20           |   22-Sobriété-Pire.java     | N/A   
+
+| /20           | 36-sobriete-meilleur.java   | N/A  
+
+| /20           | 58-sobriete-meilleure.java   | N/A  
+
+|=========================================================================================================
+
+{empty} +
+|=========================================================================================================
 | Evaluation  | Algo                | Lisibilité  | Qualité  | Temps d’exécution  | Complexité  | Sobriété
 | 5           | 2-simplicite-meilleur.c    | {plus}{plus}{plus}{plus}        | {plus}{plus}{plus}{plus}{plus}    | N/A                | N/A         | N/A
 | 4          | 3-simplicitemeilleur.java    | {plus}{plus}{plus}{plus}{plus}       | {plus}{plus}{plus}     | N/A                | N/A         | N/A
