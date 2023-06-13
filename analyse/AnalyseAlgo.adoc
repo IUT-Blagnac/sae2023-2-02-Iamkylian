@@ -1,4 +1,4 @@
-= Analyse Algorithme - réalisé par *Kylian Gachet (1A)* et *Illan Gabarra (1A)*
+= Rapport d'analyse des algorithmes - réalisé par *Kylian Gachet (1A)* et *Illan Gabarra (1A)*
 :toc:
 :toc-title: Sommaire
 //:toc: preamble
@@ -11,7 +11,7 @@
 
 [cols="4"]
 |===
-|Version | Date | Équipe | Projet
+|Version | Date | Binôme | Projet
 |1.0 | 21 juin 2023 | G1A : Kylian, Illan | Exploration algorithmique d'un probléme
 |=== 
 
@@ -34,22 +34,83 @@ En cas d'ex-aequo, même note. (5/5/3/2 par exemple).
 
 {empty} +
 
+= Rapport d'analyse des algorithmes pour le projet SAE S2.02 - Exploration algorithmique d'un problème
+
+== Introduction
+
+Le présent rapport présente une analyse détaillée des algorithmes développés dans le cadre du projet de l'entreprise DailyBank. L'objectif de cette analyse est de comparer et d'évaluer les différentes solutions proposées en termes d'efficacité, de simplicité, de sobriété, de maintenabilité, de scalabilité et de fiabilité. L'analyse a été réalisée par l'équipe composée de Kylian Gachet et Illan Gabarra, tous deux membres du groupe G1A.
+
 == Présentation des outils d'évaluation
 
-== Kylian GACHET
+Pour mener à bien cette évaluation, plusieurs outils ont été utilisés :
+
+* *Codacy :* Cet outil open source a été utilisé pour mesurer la qualité du code des différentes solutions. Il fournit des informations sur la maintenabilité, la lisibilité et les bonnes pratiques de codage.
+
+* *Joular :* Cet outil a été utilisé pour évaluer la consommation en ressources des algorithmes, en se concentrant notamment sur la consommation énergétique.
+
+* *Java Profiler :* Cet outil a permis de mesurer le temps d'exécution des différents algorithmes, en fournissant des données précises sur les performances de chaque solution.
+
+* *TempsExecution.java :* Ce programme que nous avons développé nous a été utile pour tester les temps d'éxecutions des algorithmes.
+
+== Présentation des critères de comparaison
+
+=== Lisibilité du code
+
+La lisibilité du code se réfère à sa facilité de compréhension pour les développeurs. Un code bien écrit est clair, bien structuré et utilise des conventions de nommage appropriées. Les bonnes pratiques de lisibilité comprennent l'utilisation de noms de variables significatifs, une indentation cohérente, des commentaires clairs et des espaces blancs judicieux. +
+Une code lisible facilite la compréhension, la maintenance et la collaboration entre les membres de l'équipe de développement.
+
+=== Qualité du code
+
+Les tests sont des procédures d'évaluation systématiques qui vérifient le bon fonctionnement d'un code. Les tests peuvent être automatisés ou manuels et visent à détecter les erreurs, les bogues et les comportements indésirables. +
+Une bonne couverture de test garantit une meilleure fiabilité du code et facilite la maintenance continue en identifiant rapidement les problèmes potentiels.
+
+=== Efficacité
+
+L'analyse de l'efficacité évalue les performances d'un code en termes de ressources utilisées, telles que le temps et l'espace. Elle implique l'évaluation de la complexité algorithmique, qui mesure comment le temps d'exécution et les ressources augmentent avec la taille de l'entrée. +
+Une analyse approfondie de l'efficacité permet d'identifier les parties du code qui peuvent être optimisées pour améliorer les performances globales.
+
+=== Sobriété numérique
+
+La sobriété numérique concerne la consommation de ressources d'un code, y compris la consommation d'énergie. Un code sobre est optimisé pour utiliser efficacement les ressources disponibles, minimisant ainsi la consommation de ressources telles que le temps de calcul, la mémoire ou l'énergie. L'objectif est d'écrire un code qui accomplisse la tâche souhaitée en utilisant le moins de ressources possible. +
+L'évaluation de la sobriété numérique implique l'identification des parties du code qui consomment excessivement des ressources et l'optimisation de ces portions pour réduire leur impact sur l'environnement et les coûts associés.
+
+=== Temps d'exécution
+
+Le temps d'exécution fait référence à la durée nécessaire pour exécuter un programme ou une partie spécifique du code. Mesurer le temps d'exécution permet d'identifier les parties du code qui prennent le plus de temps, ce qui peut aider à cibler les optimisations. +
+Réduire le temps d'exécution peut améliorer les performances globales du code et offrir une meilleure expérience utilisateur.
+
+=== Complexité
+
+La complexité se réfère à l'analyse de la performance d'un algorithme en fonction de la taille de l'entrée. Elle est souvent exprimée en notation Big O et permet d'estimer la quantité de ressources (temps, espace) nécessaires pour résoudre un problème. +
+Une complexité réduite, telle que O(n) ou O(log(n)), indique une meilleure efficacité, tandis qu'une complexité plus élevée, telle que O(n^2) ou O(2^n), peut entraîner des problèmes de performance.
+
+=== Maintenabilité
+
+La maintenabilité du code concerne sa capacité à être maintenu et modifié efficacement au fil du temps. Un code maintenable est facile à comprendre, à mettre à jour et à améliorer sans introduire de nouveaux bugs. Cela implique la lisibilité du code, la documentation appropriée, l'utilisation de bonnes pratiques de développement et la modularité pour faciliter les modifications. +
+Une bonne maintenabilité permet de minimiser les coûts de maintenance et de garantir le bon fonctionnement continu de l'application.
+
+== Kylian GACHET (1A)
 
 === Efficacité n°20 (java)
 
-==== Reproductibilité
+==== Lisibilité du code
 
-==== Analyse de l'Efficacité
+==== Qualité du code
 
-==== Tests
+==== Efficacité
+
+==== Sobriété numérique
 
 ==== Temps d'exécution
 
 ==== Complexité
 
+==== Maintenabilité
+
+
+
 === Simplicité
 
 === Sobriété
+
+== Illan Gabarra (1A)
