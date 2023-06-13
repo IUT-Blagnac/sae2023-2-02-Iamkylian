@@ -5,7 +5,7 @@
 | Note  | Algo                | Commentaire 
 | 18/20           | 2-simplicite-meilleur.c    | Passe tous les tests fournis initialement      
 
-| 1.5/20          | 3-simplicitemeilleur.java    | Ne correspond pas à une classe Exercice (cas des main ou des zip) + 
+| 2/20          | 3-simplicitemeilleur.java    | Ne correspond pas à une classe Exercice (cas des main ou des zip) + 
 + Non respect de la nomenclature précise + 
 + Ne fonctionne pas (retour eronné, ou pas du bon type attendu) + 
 + `Suspicion d'utilisation de ChatGPT`
@@ -22,14 +22,14 @@
 + Fonctionne mais ne passe pas les tests fournis initialement   + 
 + `Suspicion d'utilisation de ChatGPT`
 
-| 4/20           |  7-efficacite_pire.java  | Ne correspond pas à une classe Exercice (cas des main ou des zip) +
+| 4.5/20           |  7-efficacite_pire.java  | Ne correspond pas à une classe Exercice (cas des main ou des zip) +
 + Non respect de la nomenclature précise
 + Fonctionne mais ne passe pas les tests fournis initialement   
 
 | 5/20           |  20-efficacite-pire.java  | Ne fonctionne pas (retour eronné, ou pas du bon type attendu)   + 
 + `Suspicion d'utilisation de ChatGPT`  
 
-| 8/20           | 22-Efficacite-Meilleur.java | Ne correspond pas à une classe Exercice (cas des main ou des zip) + 
+| 8.5/20           | 22-Efficacite-Meilleur.java | Ne correspond pas à une classe Exercice (cas des main ou des zip) + 
 + Non respect de la nomenclature précise
 + Passe tous les tests fournis initialement 
 + `Suspicion d'utilisation de ChatGPT`       
@@ -42,7 +42,7 @@
 + Ne fonctionne pas (retour eronné, ou pas du bon type attendu) + 
 + `Suspicion d'utilisation de ChatGPT`      
 
-| 8/20           |   22-Sobriété-Pire.java     | Ne correspond pas à une classe Exercice (cas des main ou des zip) + 
+| 8.5/20           |   22-Sobriété-Pire.java     | Ne correspond pas à une classe Exercice (cas des main ou des zip) + 
 + Non respect de la nomenclature précise
 + Passe tous les tests fournis initialement  + 
 + `Suspicion d'utilisation de ChatGPT`  
