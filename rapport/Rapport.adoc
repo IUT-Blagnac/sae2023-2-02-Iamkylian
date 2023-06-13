@@ -3,12 +3,14 @@
 
 |=========================================================================================================
 | Note  | Algo                | Commentaire 
-| 9/20           | 2-simplicite-meilleur.c    | Ne correspond pas à une classe Exercice (cas des main ou des zip) + 
-+ Passe tous les tests fournis initialement      
+| 18/20           | 2-simplicite-meilleur.c    | Passe tous les tests fournis initialement      
 
 | 1.5/20          | 3-simplicitemeilleur.java    | Ne correspond pas à une classe Exercice (cas des main ou des zip) + 
 + Non respect de la nomenclature précise + 
 + Ne fonctionne pas (retour eronné, ou pas du bon type attendu) 
+
+| 5/20          | 23-simplicite-meilleur.java    | Ne correspond pas à une classe Exercice (cas des main ou des zip) + 
++ Fonctionne mais ne passe pas les tests fournis initialement
 
 | 9/20           | 28-Simplicité-pire.java  | Non respect de la nomenclature précise + 
 + Fonctionne mais ne passe pas les tests fournis initialement
@@ -16,38 +18,48 @@
 | 9/20           |  37-simplicite-pire.java | Non respect de la nomenclature précise + 
 + Fonctionne mais ne passe pas les tests fournis initialement  
 
-| /20           |  7-efficacite_pire.java  | N/A   
+| 4/20           |  7-efficacite_pire.java  | Ne correspond pas à une classe Exercice (cas des main ou des zip) +
++ Non respect de la nomenclature précise
++ Fonctionne mais ne passe pas les tests fournis initialement   
 
-| /20           |  20-efficacite-pire.java  | N/A    
+| 5/20           |  20-efficacite-pire.java  | Ne fonctionne pas (retour eronné, ou pas du bon type attendu)    
 
-| /20           | 22-Efficacite-Meilleur.java | N/A        
+| 8/20           | 22-Efficacite-Meilleur.java | Ne correspond pas à une classe Exercice (cas des main ou des zip) + 
++ Non respect de la nomenclature précise
++ Passe tous les tests fournis initialement        
 
-| /20           | 57-efficacite-meilleur.java    | N/A  
+| 5/20 et Hors concours   | 57-efficacite-meilleur.java    | Ne compile pas + 
++ Fonctionne mais ne passe pas les tests fournis initialement  
 
-| /20           | 5-sobriete-pire.java    | N/A      
+| 2.5/20           | 5-sobriete-pire.java    | Ne correspond pas à une classe Exercice (cas des main ou des zip) + 
++ Ne fonctionne pas (retour eronné, ou pas du bon type attendu)      
 
-| /20           |   22-Sobriété-Pire.java     | N/A   
+| 8/20           |   22-Sobriété-Pire.java     | Ne correspond pas à une classe Exercice (cas des main ou des zip) + 
++ Non respect de la nomenclature précise
++ Passe tous les tests fournis initialement   
 
-| /20           | 36-sobriete-meilleur.java   | N/A  
+| 18/20           | 36-sobriete-meilleur.java   | Passe tous les tests fournis initialement  
 
-| /20           | 58-sobriete-meilleure.java   | N/A  
+| 18/20           | 58-sobriete-meilleure.java   | Passe tous les tests fournis initialement  
 
 |=========================================================================================================
 
 {empty} +
+
 |=========================================================================================================
-| Evaluation  | Algo                | Lisibilité  | Qualité  | Temps d’exécution  | Complexité  | Sobriété
-| 5           | 2-simplicite-meilleur.c    | {plus}{plus}{plus}{plus}        | {plus}{plus}{plus}{plus}{plus}    | N/A                | N/A         | N/A
-| 4          | 3-simplicitemeilleur.java    | {plus}{plus}{plus}{plus}{plus}       | {plus}{plus}{plus}     | N/A                | N/A         | N/A
-| 3           | 28-Simplicité-pire.java  | {plus}{plus}{plus}         | {plus}{plus}{plus}      | N/A                | N/A         | N/A
-| 2           | 	
+| Note  | Algo                | Lisibilité  | Qualité  | Temps d’exécution  | Complexité  | Sobriété
+| ?/20           | 2-simplicite-meilleur.c    | {plus}{plus}{plus}{plus}        | {plus}{plus}{plus}{plus}{plus}    | N/A                | N/A         | N/A
+| ?/20          | 3-simplicitemeilleur.java    | {plus}{plus}{plus}{plus}{plus}       | {plus}{plus}{plus}     | N/A                | N/A         | N/A
+| ?/20          | 23-simplicite-meilleur.java    | {plus}{plus}{plus}{plus}{plus}       | {plus}{plus}{plus}     | N/A                | N/A         | N/A
+| ?/20           | 28-Simplicité-pire.java  | {plus}{plus}{plus}         | {plus}{plus}{plus}      | N/A                | N/A         | N/A
+| ?/20          | 	
 7-efficacite_pire.java  | {plus}           | {plus}{plus}{plus}{plus}     | N/A                | N/A         | N/A
-| 5           | 20-efficacite-pire.java   | N/A         | N/A      | {plus}{plus}{plus}{plus}{plus}               | {plus}{plus}{plus}{plus}     | N/A
-| 4           | 22-Efficacite-Meilleur.java     | N/A         | N/A      | {plus}{plus}{plus}             | {plus}{plus}{plus}{plus}          | N/A
-| 3           | 37-simplicite-pire.java | N/A         | N/A      | {plus}{plus}{plus}                | {plus}{plus}{plus}         | N/A
-| 2           | 57-efficacite-meilleur.java    | N/A         | N/A      | {plus}{plus}                 | {plus}        | N/A
-| 5           | 5-sobriete-pire.java    | N/A         | N/A      | N/A                 | N/A        | {plus}{plus}{plus}{plus}
-| 4           |   22-Sobriété-Pire.java     | N/A         | N/A      | N/A              | N/A         | {plus}{plus}{plus}
-| 1           | 36-sobriete-meilleur.java   | N/A         | N/A      | N/A                  | N/A         | {plus}{plus}
-| 1           | 58-sobriete-meilleure.java   | N/A         | N/A      | N/A                  | N/A         | {plus}{plus}
+| ?/20           | 20-efficacite-pire.java   | N/A         | N/A      | {plus}{plus}{plus}{plus}{plus}               | {plus}{plus}{plus}{plus}     | N/A
+| ?/20           | 22-Efficacite-Meilleur.java     | N/A         | N/A      | {plus}{plus}{plus}             | {plus}{plus}{plus}{plus}          | N/A
+| ?/20           | 37-simplicite-pire.java | N/A         | N/A      | {plus}{plus}{plus}                | {plus}{plus}{plus}         | N/A
+| ?/20          | 57-efficacite-meilleur.java    | N/A         | N/A      | {plus}{plus}                 | {plus}        | N/A
+| ?/20           | 5-sobriete-pire.java    | N/A         | N/A      | N/A                 | N/A        | {plus}{plus}{plus}{plus}
+| ?/20           |   22-Sobriété-Pire.java     | N/A         | N/A      | N/A              | N/A         | {plus}{plus}{plus}
+| ?/20           | 36-sobriete-meilleur.java   | N/A         | N/A      | N/A                  | N/A         | {plus}{plus}
+| ?/20           | 58-sobriete-meilleure.java   | N/A         | N/A      | N/A                  | N/A         | {plus}{plus}
 |=========================================================================================================
