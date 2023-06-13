@@ -7,40 +7,51 @@
 
 | 1.5/20          | 3-simplicitemeilleur.java    | Ne correspond pas à une classe Exercice (cas des main ou des zip) + 
 + Non respect de la nomenclature précise + 
-+ Ne fonctionne pas (retour eronné, ou pas du bon type attendu) 
++ Ne fonctionne pas (retour eronné, ou pas du bon type attendu) + 
++ `Suspicion d'utilisation de ChatGPT`
 
 | 5/20          | 23-simplicite-meilleur.java    | Ne correspond pas à une classe Exercice (cas des main ou des zip) + 
-+ Fonctionne mais ne passe pas les tests fournis initialement
++ Fonctionne mais ne passe pas les tests fournis initialement + 
++ `Suspicion d'utilisation de ChatGPT`
 
 | 9/20           | 28-Simplicité-pire.java  | Non respect de la nomenclature précise + 
-+ Fonctionne mais ne passe pas les tests fournis initialement
++ Fonctionne mais ne passe pas les tests fournis initialement + 
++ `Suspicion d'utilisation de ChatGPT`
 
 | 9/20           |  37-simplicite-pire.java | Non respect de la nomenclature précise + 
-+ Fonctionne mais ne passe pas les tests fournis initialement  
++ Fonctionne mais ne passe pas les tests fournis initialement   + 
++ `Suspicion d'utilisation de ChatGPT`
 
 | 4/20           |  7-efficacite_pire.java  | Ne correspond pas à une classe Exercice (cas des main ou des zip) +
 + Non respect de la nomenclature précise
 + Fonctionne mais ne passe pas les tests fournis initialement   
 
-| 5/20           |  20-efficacite-pire.java  | Ne fonctionne pas (retour eronné, ou pas du bon type attendu)    
+| 5/20           |  20-efficacite-pire.java  | Ne fonctionne pas (retour eronné, ou pas du bon type attendu)   + 
++ `Suspicion d'utilisation de ChatGPT`  
 
 | 8/20           | 22-Efficacite-Meilleur.java | Ne correspond pas à une classe Exercice (cas des main ou des zip) + 
 + Non respect de la nomenclature précise
-+ Passe tous les tests fournis initialement        
++ Passe tous les tests fournis initialement 
++ `Suspicion d'utilisation de ChatGPT`       
 
 | 5/20 et Hors concours   | 57-efficacite-meilleur.java    | Ne compile pas + 
-+ Fonctionne mais ne passe pas les tests fournis initialement  
++ Fonctionne mais ne passe pas les tests fournis initialement + 
++ `Suspicion d'utilisation de ChatGPT`  
 
 | 2.5/20           | 5-sobriete-pire.java    | Ne correspond pas à une classe Exercice (cas des main ou des zip) + 
-+ Ne fonctionne pas (retour eronné, ou pas du bon type attendu)      
++ Ne fonctionne pas (retour eronné, ou pas du bon type attendu) + 
++ `Suspicion d'utilisation de ChatGPT`      
 
 | 8/20           |   22-Sobriété-Pire.java     | Ne correspond pas à une classe Exercice (cas des main ou des zip) + 
 + Non respect de la nomenclature précise
-+ Passe tous les tests fournis initialement   
++ Passe tous les tests fournis initialement  + 
++ `Suspicion d'utilisation de ChatGPT`  
 
-| 18/20           | 36-sobriete-meilleur.java   | Passe tous les tests fournis initialement  
+| 18/20           | 36-sobriete-meilleur.java   | Passe tous les tests fournis initialement + 
++ `Suspicion d'utilisation de ChatGPT`  
 
-| 18/20           | 58-sobriete-meilleure.java   | Passe tous les tests fournis initialement  
+| 18/20           | 58-sobriete-meilleure.java   | Passe tous les tests fournis initialement + 
++ `Suspicion d'utilisation de ChatGPT`  
 
 |=========================================================================================================
 
