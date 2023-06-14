@@ -1,44 +1,40 @@
 package exercice;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
 import java.util.List;
+import java.util.Map;
+import java.util.ArrayList;
+import java.util.HashMap;
 
 public class Exercice {
-    public static List<String> solution(String str, List<Character> ordre) {
-        List<String> motsClasses = new ArrayList<>();
-        StringBuilder motCourant = new StringBuilder();
-    
-        for (int i = 0; i < str.length(); i++) {
-            char c = str.charAt(i);
-    
-            if (Character.isLetterOrDigit(c)) {
-                motCourant.append(c);
-            } else {
-                if (motCourant.length() > 0) {
-                    motsClasses.add(motCourant.toString());
-                    motCourant.setLength(0);
+	public static String solution(String phrase, List<Character> alphabet) {
+        // Créer une map pour associer chaque lettre à une liste de mots commençant par cette lettre
+        Map<Character, List<String>> motsParLettre = new HashMap<>();
+        for (char lettre : alphabet) {
+            motsParLettre.put(lettre, new ArrayList<>());
+        }
+
+        // Diviser la phrase en mots
+        String[] mots = phrase.toLowerCase().split("\\W+");
+
+        // Parcourir chaque mot et l'ajouter à la liste correspondante dans la map
+        for (String mot : mots) {
+            if (!mot.isEmpty()) {
+                char premiereLettre = mot.charAt(0);
+                if (motsParLettre.containsKey(premiereLettre)) {
+                    motsParLettre.get(premiereLettre).add(mot);
                 }
             }
         }
-    
-        if (motCourant.length() > 0) {
-            motsClasses.add(motCourant.toString());
-        }
-    
-        Comparator<String> ordreComparator = Comparator.comparingInt(s -> getIndex(s.charAt(0), ordre));
-        Collections.sort(motsClasses, ordreComparator);
-    
-        return motsClasses;
-    }
-    
-    private static int getIndex(char c, List<Character> ordre) {
-        for (int i = 0; i < ordre.size(); i++) {
-            if (ordre.get(i) == c) {
-                return i;
+
+        // Créer une liste de mots triés en parcourant l'alphabet et concaténant les listes de mots
+        StringBuilder phraseTrie = new StringBuilder();
+        for (char lettre : alphabet) {
+            List<String> motsDeLaLettre = motsParLettre.get(lettre);
+            for (String mot : motsDeLaLettre) {
+                phraseTrie.append(mot).append(" ");
             }
         }
-        return ordre.size();
+
+        return phraseTrie.toString().trim();
     }
 }
