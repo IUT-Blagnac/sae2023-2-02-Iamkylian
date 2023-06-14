@@ -38,10 +38,13 @@ En cas d'ex-aequo, même note. (5/5/3/2 par exemple).
 
 == Introduction
 
+[.text-justify]
 La SAE "Exploitation algorithmique d'un problème" comporte deux phases. Dans la première phase, notre objectif est de résoudre un problème qui consiste à classer les mots d'un texte en fonction d'un ordre donné. Pour cela, nous devons respecter certaines contraintes lors de la conception de notre algorithme, notamment en ce qui concerne le choix du langage (Java ou C) et l'utilisation de méthodes spécifiques. De plus, nous devons soumettre deux versions, à savoir la meilleure solution et la pire solution, pour chaque catégorie : simplicité, efficacité et sobriété numérique. +
 
+[.text-justify]
 Dans la deuxième phase du concours, nous travaillons en binôme pour comparer et évaluer les différentes solutions. Nous devons évaluer plusieurs solutions en fonction de critères tels que la lisibilité du code, la qualité du code, l'efficacité, la sobriété numérique et le temps d'exécution, mais nous sommes libres de choisir d'autre critére à condition qu'ils soit pertinents. Nous devons justifier nos analyses et classer les solutions en conséquence. +
 
+[.text-justify]
 Ce concours d'algorithmes nous permet de mettre en pratique nos compétences en programmation, en résolution de problèmes ainsi qu'en analyse algorithmique. +
 
 == Notation des algorithmes
@@ -210,8 +213,10 @@ Suspicion de chatGPT
 
 == Présentation des outils d'évaluation
 
+[.text-justify]
 Pour mener à bien cette évaluation, plusieurs outils ont été utilisés :
 
+[.text-justify]
 * *Codacy :* Cet outil open source a été utilisé pour mesurer la qualité du code des différentes solutions. Il fournit des informations sur la maintenabilité, la lisibilité et les bonnes pratiques de codage.
 
 * *Joular :* Cet outil a été utilisé pour évaluer la consommation en ressources des algorithmes, en se concentrant notamment sur la consommation énergétique.
@@ -222,22 +227,27 @@ Pour mener à bien cette évaluation, plusieurs outils ont été utilisés :
 
 == Présentation des critères de comparaison
 
+[.text-justify]
 La notation des algorithmes sera plus sévère si ces derniers ne fonctionnent pas, ne se compilent pas correctement ou échouent aux tests. Dans ce cas, la note finale sera `divisée par deux` avant d'être convertie sur 20. +
 
+[.text-justify]
 Pour chaque catégorie, nous allons évaluer la "meilleure" et la "pire" solution. Pour la meilleure solution, nous conserverons la `note la plus élevée`, tandis que pour la pire solution, la `note la plus basse` sera classée en premier.
  
 === Lisibilité du code
 
+[.text-justify]
 La lisibilité du code se réfère à sa facilité de compréhension pour les développeurs. Un code bien écrit est clair, bien structuré et utilise des conventions de nommage appropriées. Les bonnes pratiques de lisibilité comprennent l'utilisation de noms de variables significatifs, une indentation cohérente, des commentaires clairs et des espaces blancs judicieux. +
 Une code lisible facilite la compréhension, la maintenance et la collaboration entre les membres de l'équipe de développement.
 
 === Qualité du code
 
+[.text-justify]
 Les tests sont des procédures d'évaluation systématiques qui vérifient le bon fonctionnement d'un code. Les tests peuvent être automatisés ou manuels et visent à détecter les erreurs, les bogues et les comportements indésirables. +
 Une bonne couverture de test garantit une meilleure fiabilité du code et facilite la maintenance continue en identifiant rapidement les problèmes potentiels.
 
 === Efficacité
 
+[.text-justify]
 L'analyse de l'efficacité évalue les performances d'un code en termes de ressources utilisées, telles que le temps et l'espace. Elle implique l'évaluation de la complexité algorithmique, qui mesure comment le temps d'exécution et les ressources augmentent avec la taille de l'entrée. + 
 La complexité se réfère à l'analyse de la performance d'un algorithme en fonction de la taille de l'entrée. Elle est souvent exprimée en notation Big O et permet d'estimer la quantité de ressources (temps, espace) nécessaires pour résoudre un problème. +
 Une complexité réduite, telle que O(n) ou O(log(n)), indique une meilleure efficacité, tandis qu'une complexité plus élevée, telle que O(n^2) ou O(2^n), peut entraîner des problèmes de performance. +
@@ -245,16 +255,19 @@ Une analyse approfondie de l'efficacité permet d'identifier les parties du code
 
 === Sobriété numérique
 
+[.text-justify]
 La sobriété numérique concerne la consommation de ressources d'un code, y compris la consommation d'énergie. Un code sobre est optimisé pour utiliser efficacement les ressources disponibles, minimisant ainsi la consommation de ressources telles que le temps de calcul, la mémoire ou l'énergie. L'objectif est d'écrire un code qui accomplisse la tâche souhaitée en utilisant le moins de ressources possible. +
 L'évaluation de la sobriété numérique implique l'identification des parties du code qui consomment excessivement des ressources et l'optimisation de ces portions pour réduire leur impact sur l'environnement et les coûts associés.
 
 === Temps d'exécution
 
+[.text-justify]
 Le temps d'exécution fait référence à la durée nécessaire pour exécuter un programme ou une partie spécifique du code. Mesurer le temps d'exécution permet d'identifier les parties du code qui prennent le plus de temps, ce qui peut aider à cibler les optimisations. +
 Réduire le temps d'exécution peut améliorer les performances globales du code et offrir une meilleure expérience utilisateur.
 
 === Maintenabilité
 
+[.text-justify]
 La maintenabilité du code concerne sa capacité à être maintenu et modifié efficacement au fil du temps. Un code maintenable est facile à comprendre, à mettre à jour et à améliorer sans introduire de nouveaux bugs. Cela implique la lisibilité du code, la documentation appropriée, l'utilisation de bonnes pratiques de développement et la modularité pour faciliter les modifications. +
 Une bonne maintenabilité permet de minimiser les coûts de maintenance et de garantir le bon fonctionnement continu de l'application.
 
@@ -286,6 +299,7 @@ divisé par 2 car ne passe pas les tests => 10/30 +
 
 `Algorithme Simplicité - Meilleur N°2 :` +
 
+[.text-justify]
 * *Lisibilité :* 
 ** _Justification_ : Les noms de variables sont explicites et bien choisis, par exemple `motsParLettre` pour représenter la map associant chaque lettre à une liste de mots. Cela rend le code facile à comprendre et à suivre.
 ** _Exemple_ : Les noms de variables tels que `table_ordre`, `liste_t`, `ajouter_mot` sont des exemples de lisibilité du code.
@@ -300,6 +314,7 @@ divisé par 2 car ne passe pas les tests => 10/30 +
 
 `Algorithme Simplicité - Meilleur N°3 :` +
 
+[.text-justify]
 * *Lisibilité :* 
 ** _Justification_ : Utilise des commentaires pour expliquer le fonctionnement.
 ** _Exemple_ : Le commentaire explique clairement que la fonction "solution" trie les mots d'une chaîne de caractères selon un ordre spécifié.
@@ -315,6 +330,7 @@ divisé par 2 car ne passe pas les tests => 10/30 +
 
 `Algorithme Simplicité - Meilleur N°23 :` +
 
+[.text-justify]
 * *Lisibilité :* 
 ** _Justification_ : Noms de variables explicites et bien choisis.
 ** _Exemple_ : La variable "motsParLettre" représente la map associant chaque lettre à une liste de mots.
@@ -344,6 +360,7 @@ divisé par 2 car ne passe pas les tests => 4.5/30 +
 
 `Algorithme Simplicité - Pire N°28 :` +
 
+[.text-justify]
 * *Lisibilité :* 
 ** _Justification_ : Le programme utilise des noms de variables et de fonctions clairs et significatifs. La structure du code est également bien organisée.
 ** _Exemple_ : Les noms de variables tels que `phrase`, `ordre`, `mots` et `ordreIndex` sont des exemples de lisibilité du code.
@@ -358,6 +375,7 @@ divisé par 2 car ne passe pas les tests => 4.5/30 +
 
 `Algorithme Simplicité - Pire N°37 :` +
 
+[.text-justify]
 * *Lisibilité :* 
 ** _Justification_ : Le programme utilise des noms de variables et de fonctions clairs et significatifs. Cependant la structure du code est trés mal organisé.
 ** _Exemple_ : Les noms de variables tels que `texte`, `ordre` et `mots` sont des exemples de bonne lisibilité du code. Le code n'est pas bien formaté/indenter (tout le code sur une seul ligne)
