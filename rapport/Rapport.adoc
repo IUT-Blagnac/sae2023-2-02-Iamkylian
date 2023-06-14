@@ -234,7 +234,9 @@ Une bonne couverture de test garantit une meilleure fiabilité du code et facili
 
 === Efficacité
 
-L'analyse de l'efficacité évalue les performances d'un code en termes de ressources utilisées, telles que le temps et l'espace. Elle implique l'évaluation de la complexité algorithmique, qui mesure comment le temps d'exécution et les ressources augmentent avec la taille de l'entrée. +
+L'analyse de l'efficacité évalue les performances d'un code en termes de ressources utilisées, telles que le temps et l'espace. Elle implique l'évaluation de la complexité algorithmique, qui mesure comment le temps d'exécution et les ressources augmentent avec la taille de l'entrée. + 
+La complexité se réfère à l'analyse de la performance d'un algorithme en fonction de la taille de l'entrée. Elle est souvent exprimée en notation Big O et permet d'estimer la quantité de ressources (temps, espace) nécessaires pour résoudre un problème. +
+Une complexité réduite, telle que O(n) ou O(log(n)), indique une meilleure efficacité, tandis qu'une complexité plus élevée, telle que O(n^2) ou O(2^n), peut entraîner des problèmes de performance. +
 Une analyse approfondie de l'efficacité permet d'identifier les parties du code qui peuvent être optimisées pour améliorer les performances globales.
 
 === Sobriété numérique
@@ -246,11 +248,6 @@ L'évaluation de la sobriété numérique implique l'identification des parties 
 
 Le temps d'exécution fait référence à la durée nécessaire pour exécuter un programme ou une partie spécifique du code. Mesurer le temps d'exécution permet d'identifier les parties du code qui prennent le plus de temps, ce qui peut aider à cibler les optimisations. +
 Réduire le temps d'exécution peut améliorer les performances globales du code et offrir une meilleure expérience utilisateur.
-
-=== Complexité
-
-La complexité se réfère à l'analyse de la performance d'un algorithme en fonction de la taille de l'entrée. Elle est souvent exprimée en notation Big O et permet d'estimer la quantité de ressources (temps, espace) nécessaires pour résoudre un problème. +
-Une complexité réduite, telle que O(n) ou O(log(n)), indique une meilleure efficacité, tandis qu'une complexité plus élevée, telle que O(n^2) ou O(2^n), peut entraîner des problèmes de performance.
 
 === Maintenabilité
 
@@ -264,19 +261,37 @@ Une bonne maintenabilité permet de minimiser les coûts de maintenance et de ga
 ==== Meilleur
 
 |=========================================================================================================
-| Num Algo | Lisibilité | Simplicité du code | Qualité | Maintenance | Note | Classement Final
+| Num Algo | Lisibilité | Qualité | Maintenabilité | Note | Classement Final
 
-| 2 |    |  |  |  | ?/20 | 1
+| 2 |  |  |  | ?/20 | 1
 
-| 2 |    |  |  |  | ?/20 | 1
+| 2 |  |  |  | ?/20 | 1
 
-| 2 |    |  |  |  | ?/20 | 1
+| 2 |  |  |  | ?/20 | 1
 
 |=========================================================================================================
 
 ==== Pire
 
+|=========================================================================================================
+| Num Algo | Lisibilité | Qualité | Maintenabilité | Note | Classement Final
+
+| 2 |  |  |  | ?/20 | 1
+
+| 2 |  |  |  | ?/20 | 1
+
+|=========================================================================================================
+
 === Efficacité
+
+|=========================================================================================================
+| Num Algo | Complexité | Temps d'exécution | Maintenabilité | Note | Classement Final
+
+| 2 |  |  |  | ?/20 | 1
+
+| 2 |  |  |  | ?/20 | 1
+
+|=========================================================================================================
 
 === Sobriété
 
