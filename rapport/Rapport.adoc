@@ -108,6 +108,8 @@ Ce concours d'algorithmes nous permet de mettre en pratique nos compétences en 
 
 === Illan GABARRA (1A)
 
+{empty} +
+
 |=========================================================================================================
 | Note  | Algo                | Commentaire 
 | 17/20           | 20-efficacite-meilleur.c    | 
@@ -203,6 +205,8 @@ Ne respecte pas la nomenclature précise
 Suspicion de chatGPT
 
 |=========================================================================================================
+
+{empty} +
 
 == Présentation des outils d'évaluation
 
