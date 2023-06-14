@@ -1,4 +1,4 @@
-= Rapport d'analyse des algorithmes pour le projet SAE S2.02 - Exploration algorithmique d'un problème - réalisé par *Kylian Gachet (1A)* et *Illan Gabarra (1A)*
+= Rapport d'analyse des algorithmes pour le projet SAE S2.02 - Exploration algorithmique d'un problème - réalisé par *Kylian GACHET (1A)* et *Illan GABARRA (1A)*
 :toc:
 :toc-title: Sommaire
 //:toc: preamble
