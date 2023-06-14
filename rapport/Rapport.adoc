@@ -161,16 +161,31 @@ Une bonne maintenabilité permet de minimiser les coûts de maintenance et de ga
 
 == Kylian GACHET (1A)
 
-=== Efficacité
-
 === Simplicité
+
+==== Meilleur
+
+|=========================================================================================================
+| Num Algo | Lisibilité | Simplicité du code | Qualité | Maintenance | Note | Classement Final
+
+| 2 |    |  |  |  | ?/20 | 1
+
+| 2 |    |  |  |  | ?/20 | 1
+
+| 2 |    |  |  |  | ?/20 | 1
+
+|=========================================================================================================
+
+==== Pire
+
+=== Efficacité
 
 === Sobriété
 
 == Illan Gabarra (1A)
 
-=== Efficacité
-
 === Simplicité
+
+=== Efficacité
 
 === Sobriété
