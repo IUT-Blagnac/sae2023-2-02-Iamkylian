@@ -263,7 +263,8 @@ L'évaluation de la sobriété numérique implique l'identification des parties 
 
 [.text-justify]
 Le temps d'exécution fait référence à la durée nécessaire pour exécuter un programme ou une partie spécifique du code. Mesurer le temps d'exécution permet d'identifier les parties du code qui prennent le plus de temps, ce qui peut aider à cibler les optimisations. +
-Réduire le temps d'exécution peut améliorer les performances globales du code et offrir une meilleure expérience utilisateur.
+Réduire le temps d'exécution peut améliorer les performances globales du code et offrir une meilleure expérience utilisateur. +
+Afin de mesurer le temps d'execution nous allons utiliser le programme `TestTempsExecution.java` codé par nos soins.
 
 === Maintenabilité
 
