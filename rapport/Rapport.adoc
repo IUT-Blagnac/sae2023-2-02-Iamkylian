@@ -274,13 +274,56 @@ Une bonne maintenabilité permet de minimiser les coûts de maintenance et de ga
 
 | 3 |7/10 | 9/10 | 8/10 | 24/30 +
 divisé par 2 car ne fonctionne pas => 12/30 +
-=> 8/20  | 2
+=> `*8/20*`  | 2
 
 | 23 | 8/10 | 7/10 | 6/10 | 21/30 +
 divisé par 2 car ne passe pas les tests => 10.5/30 +
 => 7/20  | 3
 
 |=========================================================================================================
+
+`Algorithme Simplicité - Meilleur N°2 :` +
+
+* *Lisibilité :* 
+** _Justification_ : Les noms de variables sont explicites et bien choisis, par exemple `motsParLettre` pour représenter la map associant chaque lettre à une liste de mots. Cela rend le code facile à comprendre et à suivre.
+** _Exemple_ : Les noms de variables tels que `table_ordre`, `liste_t`, `ajouter_mot` sont des exemples de lisibilité du code.
+
+* *Qualité :* 
+** _Justification_ : Le programme utilise des structures de données appropriées pour résoudre le problème, telles que les listes chaînées et les tables de correspondance. De plus, les fonctions sont bien définies pour effectuer des opérations spécifiques.
+** _Exemple_ : L'utilisation de structures de données comme `cell_t` et `liste_t` ainsi que des fonctions comme `ajouter_cellule` et `rang` démontrent la qualité du code.
+
+* *Maintenabilité :* 
+** _Justification_ : Le code est divisé en sections claires avec des commentaires pour expliquer chaque section et chaque fonction. De plus, les noms de variables et de fonctions sont choisis de manière à faciliter la maintenance et les modifications ultérieures.
+** _Exemple_ : Les commentaires décrivant les différentes sections du code et l'utilisation de noms significatifs pour les variables et les fonctions contribuent à la maintenabilité du programme.
+
+`Algorithme Simplicité - Meilleur N°3 :` +
+
+* *Lisibilité :* 
+** _Justification_ : Utilise des commentaires pour expliquer le fonctionnement.
+** _Exemple_ : Le commentaire explique clairement que la fonction "solution" trie les mots d'une chaîne de caractères selon un ordre spécifié.
+
+* *Qualité :* 
+** _Justification_ : Approche originale qui évite les comparaisons entre les chaînes de caractères.
+** _Exemple_ : Utilisation d'une table de correspondance pour déterminer l'ordre des mots, ce qui peut améliorer la qualité en évitant des opérations coûteuses de comparaison.
+
+* *Maintenabilité :* 
+** _Justification_ : Utilisation de fonctions distinctes pour rendre le code modulaire.
+** _Exemple_ : La fonction "diviserMots" extrait les mots d'une chaîne de caractères, ce qui facilite la maintenance et la réutilisation du code.
+
+
+`Algorithme Simplicité - Meilleur N°23 :` +
+
+* *Lisibilité :* 
+** _Justification_ : Noms de variables explicites et bien choisis.
+** _Exemple_ : La variable "motsParLettre" représente la map associant chaque lettre à une liste de mots.
+
+* *Qualité :* 
+** _Justification_ : Fonctionne correctement et renvoie le résultat attendu.
+** _Exemple_ : La méthode "trierMots" divise correctement la phrase en mots, trie les mots par ordre alphabétique et les concatène pour renvoyer la phrase triée.
+
+* *Maintenabilité :* 
+** _Justification_ : Manque de modularité et de réutilisabilité.
+** _Exemple_ : La logique de tri des mots pourrait être extraite dans une méthode séparée pour faciliter la maintenance et la réutilisation.
 
 ==== Pire
 
