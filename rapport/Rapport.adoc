@@ -108,7 +108,101 @@ Ce concours d'algorithmes nous permet de mettre en pratique nos compétences en 
 
 === Illan GABARRA (1A)
 
+|=========================================================================================================
+| Note  | Algo                | Commentaire 
+| 17/20           | 20-efficacite-meilleur.c    | 
+Passe tous les tests fournis initialement
 
+Mais pas les tests supplémentaires
+
+Hors concours car utilise la fonction qsort hors dans la catégorie efficacite il ne fallait pas l'utiliser
+
+| 4.5/20          | 56-efficacite-meilleur.java    |
+Ne passe pas tous les tests fournis initialement
+
+Ne respecte pas la nomenclature précise
+
+Suspicion de chatGPT
+
+Hors concours car ne compile pas
+
+| 20/20           | 17-efficacite-pire.java  | 
+
+Passe tous les tests même les tests supplémentaires
+
+Suspicion de chatGPT
+
+| 2/20          |  68-EfficacitePire.java |
+
+Ne fonctionne pas
+
+Ne respecte pas la nomenclature précise
+
+Suspicion de chatGPT
+
+Hors concours car ne compile pas
+
+| 2.5/20           |  6-sae2023-2-02-NOM-main.zip  |
+
+Ne correspond pas à une classe Exercice (ZIP du dépot git)
+
+Après rajout de beaucoup d'import : Fonctionne mais ne passe pas les tests fournis initialement
+
+Hors concours car ne compile pas
+
+| 17/20           |  54-simplicite-meilleur.java  |
+
+Passe tous les tests fournis initialement
+
+Mais pas les tests supplémentaires
+
+| 4/20           | 65-Simplicite-Meilleur.java | 
+
+Ne fonctionne pas
+
+Ne respecte pas la nomenclature précise
+
+| 20/20           | 29-simplicite-pire.java    |
+
+Passe tous les tests même les tests supplémentaires
+
+| 9/20           | 36-simplicite-pire.java    |   
+
+Ne passe pas tous les tests fournis initialement
+
+Ne respecte pas la nomenclature précise
+
+| 19/20           |   34-sobriete-meilleur.java     | 
+
+Ne respecte pas la nomenclature précise
+
+Passe tous les tests même les tests supplémentaires
+
+Suspicion de chatGPT
+
+| 2/20           | 57-sobriete-meilleur.java   |
+
+Ne fonctionne pas
+
+Ne respecte pas la nomenclature précise
+
+Suspicion de chatGPT
+
+Hors concours car ne compile pas
+
+| 10/20           | 20-sobriete-pire.java   |
+
+Ne passe pas tous les tests fournis initialement
+
+| 4/20           | 49-PireSobrieteNumerique.java   |
+
+Ne fonctionne pas
+
+Ne respecte pas la nomenclature précise
+
+Suspicion de chatGPT
+
+|=========================================================================================================
 
 == Présentation des outils d'évaluation
 
