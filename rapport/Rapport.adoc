@@ -243,7 +243,9 @@ Une code lisible facilite la compréhension, la maintenance et la collaboration 
 
 [.text-justify]
 Les tests sont des procédures d'évaluation systématiques qui vérifient le bon fonctionnement d'un code. Les tests peuvent être automatisés ou manuels et visent à détecter les erreurs, les bogues et les comportements indésirables. +
-Une bonne couverture de test garantit une meilleure fiabilité du code et facilite la maintenance continue en identifiant rapidement les problèmes potentiels.
+Une bonne couverture de test garantit une meilleure fiabilité du code et facilite la maintenance continue en identifiant rapidement les problèmes potentiels. +
+La qualité du code peut être évaluée à l'aide d'outils open source tels que `SonarLint` sous VsCode.il effectue des analyses statiques du code pour détecter les erreurs, les problèmes de style et les vulnérabilités de sécurité. +
+Ils fournissent des mesures de qualité basées sur des normes et des bonnes pratiques de développement logiciel, permettant aux développeurs d'améliorer la qualité de leur code.
 
 === Efficacité
 
@@ -257,7 +259,7 @@ Une analyse approfondie de l'efficacité permet d'identifier les parties du code
 
 [.text-justify]
 La sobriété numérique concerne la consommation de ressources d'un code, y compris la consommation d'énergie. Un code sobre est optimisé pour utiliser efficacement les ressources disponibles, minimisant ainsi la consommation de ressources telles que le temps de calcul, la mémoire ou l'énergie. L'objectif est d'écrire un code qui accomplisse la tâche souhaitée en utilisant le moins de ressources possible. +
-L'évaluation de la sobriété numérique implique l'identification des parties du code qui consomment excessivement des ressources et l'optimisation de ces portions pour réduire leur impact sur l'environnement et les coûts associés.
+Nous allons utiliser des outils tels que `Joular` peuvent mesurer la consommation en ressources d'un algorithme et aider à identifier les parties du code qui consomment beaucoup de ressources. Cet outil nous permet donc de mesurer la sobriété d’un code.
 
 === Temps d'exécution
 
