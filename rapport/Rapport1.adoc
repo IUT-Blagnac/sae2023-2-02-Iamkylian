@@ -1,4 +1,4 @@
-= Rapport d'analyse des algorithmes - réalisé par *Kylian Gachet (1A)* et *Illan Gabarra (1A)*
+= Rapport d'analyse des algorithmes pour le projet SAE S2.02 - Exploration algorithmique d'un problème - réalisé par *Kylian Gachet (1A)* et *Illan Gabarra (1A)*
 :toc:
 :toc-title: Sommaire
 //:toc: preamble
@@ -6,13 +6,13 @@
 :sectnums:
 :sectnumlevels: 5
 
-:Entreprise: DailyBank
+:Entreprise: IUT de Blagnac
 :Equipe: 
 
 [cols="4"]
 |===
 |Version | Date | Binôme | Projet
-|1.0 | 21 juin 2023 | G1A : Kylian, Illan | Exploration algorithmique d'un probléme
+|1.0 | 16 juin 2023 | G1A : Kylian GACHET, Illan GABARRA | Exploration algorithmique d'un probléme
 |=== 
 
 {empty} +
@@ -34,11 +34,81 @@ En cas d'ex-aequo, même note. (5/5/3/2 par exemple).
 
 {empty} +
 
-= Rapport d'analyse des algorithmes pour le projet SAE S2.02 - Exploration algorithmique d'un problème
+
 
 == Introduction
 
-Le présent rapport présente une analyse détaillée des algorithmes développés dans le cadre du projet de l'entreprise DailyBank. L'objectif de cette analyse est de comparer et d'évaluer les différentes solutions proposées en termes d'efficacité, de simplicité, de sobriété, de maintenabilité, de scalabilité et de fiabilité. L'analyse a été réalisée par l'équipe composée de Kylian Gachet et Illan Gabarra, tous deux membres du groupe G1A.
+La SAE "Exploitation algorithmique d'un problème" comporte deux phases. Dans la première phase, notre objectif est de résoudre un problème qui consiste à classer les mots d'un texte en fonction d'un ordre donné. Pour cela, nous devons respecter certaines contraintes lors de la conception de notre algorithme, notamment en ce qui concerne le choix du langage (Java ou C) et l'utilisation de méthodes spécifiques. De plus, nous devons soumettre deux versions, à savoir la meilleure solution et la pire solution, pour chaque catégorie : simplicité, efficacité et sobriété numérique. +
+
+Dans la deuxième phase du concours, nous travaillons en binôme pour comparer et évaluer les différentes solutions. Nous devons évaluer plusieurs solutions en fonction de critères tels que la lisibilité du code, la qualité du code, l'efficacité, la sobriété numérique et le temps d'exécution, mais nous sommes libres de choisir d'autre critére à condition qu'ils soit pertinents. Nous devons justifier nos analyses et classer les solutions en conséquence. +
+
+Ce concours d'algorithmes nous permet de mettre en pratique nos compétences en programmation, en résolution de problèmes ainsi qu'en analyse algorithmique. +
+
+== Notation des algorithmes
+
+=== Kylian GACHET (1A)
+
+{empty} +
+
+|=========================================================================================================
+| Note  | Algo                | Commentaire 
+| 18/20           | 2-simplicite-meilleur.c    | Passe tous les tests fournis initialement      
+
+| 2/20          | 3-simplicitemeilleur.java    | Ne correspond pas à une classe Exercice (cas des main ou des zip) + 
++ Non respect de la nomenclature précise + 
++ Ne fonctionne pas (retour eronné, ou pas du bon type attendu) + 
++ `Suspicion d'utilisation de ChatGPT`
+
+| 5/20          | 23-simplicite-meilleur.java    | Ne correspond pas à une classe Exercice (cas des main ou des zip) + 
++ Fonctionne mais ne passe pas les tests fournis initialement + 
++ `Suspicion d'utilisation de ChatGPT`
+
+| 9/20           | 28-Simplicité-pire.java  | Non respect de la nomenclature précise + 
++ Fonctionne mais ne passe pas les tests fournis initialement + 
++ `Suspicion d'utilisation de ChatGPT`
+
+| 9/20           |  37-simplicite-pire.java | Non respect de la nomenclature précise + 
++ Fonctionne mais ne passe pas les tests fournis initialement   + 
++ `Suspicion d'utilisation de ChatGPT`
+
+| 4.5/20           |  7-efficacite_pire.java  | Ne correspond pas à une classe Exercice (cas des main ou des zip) +
++ Non respect de la nomenclature précise
++ Fonctionne mais ne passe pas les tests fournis initialement   
+
+| 5/20           |  20-efficacite-pire.java  | Ne fonctionne pas (retour eronné, ou pas du bon type attendu)   + 
++ `Suspicion d'utilisation de ChatGPT`  
+
+| 9.5/20           | 22-Efficacite-Meilleur.java | Ne correspond pas à une classe Exercice (cas des main ou des zip) + 
++ Non respect de la nomenclature précise
++ Passe vos tests supplémentaires plus complets 
++ `Suspicion d'utilisation de ChatGPT`       
+
+| 5/20 et Hors concours   | 57-efficacite-meilleur.java    | Ne compile pas + 
++ Fonctionne mais ne passe pas les tests fournis initialement + 
++ `Suspicion d'utilisation de ChatGPT`  
+
+| 2.5/20           | 5-sobriete-pire.java    | Ne correspond pas à une classe Exercice (cas des main ou des zip) + 
++ Ne fonctionne pas (retour eronné, ou pas du bon type attendu) + 
++ `Suspicion d'utilisation de ChatGPT`      
+
+| 9.5/20           |   22-Sobriété-Pire.java     | Ne correspond pas à une classe Exercice (cas des main ou des zip) + 
++ Non respect de la nomenclature précise
++ Passe vos tests supplémentaires plus complets  + 
++ `Suspicion d'utilisation de ChatGPT`  
+
+| 18/20           | 36-sobriete-meilleur.java   | Passe tous les tests fournis initialement + 
++ `Suspicion d'utilisation de ChatGPT`  
+
+| 18/20           | 58-sobriete-meilleure.java   | Passe tous les tests fournis initialement + 
++ `Suspicion d'utilisation de ChatGPT`  
+
+|=========================================================================================================
+
+{empty} +
+
+=== Illan GABARRA (1A)
+
+
 
 == Présentation des outils d'évaluation
 
@@ -91,26 +161,16 @@ Une bonne maintenabilité permet de minimiser les coûts de maintenance et de ga
 
 == Kylian GACHET (1A)
 
-=== Efficacité n°20 (java)
-
-==== Lisibilité du code
-
-==== Qualité du code
-
-==== Efficacité
-
-==== Sobriété numérique
-
-==== Temps d'exécution
-
-==== Complexité
-
-==== Maintenabilité
-
-
+=== Efficacité
 
 === Simplicité
 
 === Sobriété
 
 == Illan Gabarra (1A)
+
+=== Efficacité
+
+=== Simplicité
+
+=== Sobriété
