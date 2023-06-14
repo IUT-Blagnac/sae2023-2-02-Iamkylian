@@ -254,6 +254,10 @@ Réduire le temps d'exécution peut améliorer les performances globales du code
 La maintenabilité du code concerne sa capacité à être maintenu et modifié efficacement au fil du temps. Un code maintenable est facile à comprendre, à mettre à jour et à améliorer sans introduire de nouveaux bugs. Cela implique la lisibilité du code, la documentation appropriée, l'utilisation de bonnes pratiques de développement et la modularité pour faciliter les modifications. +
 Une bonne maintenabilité permet de minimiser les coûts de maintenance et de garantir le bon fonctionnement continu de l'application.
 
+=== Consomation électrique
+
+
+
 == Kylian GACHET (1A)
 
 === Simplicité
@@ -284,16 +288,51 @@ Une bonne maintenabilité permet de minimiser les coûts de maintenance et de ga
 
 === Efficacité
 
+==== Meilleur
+
 |=========================================================================================================
-| Num Algo | Complexité | Temps d'exécution | Maintenabilité | Note | Classement Final
+| Num Algo | Efficacité | Qualité | Temps d'exécution | Note | Classement Final
 
-| 2 |  |  |  | ?/20 | 1
+| 2 |  | |   |  ?/20 | 1
 
-| 2 |  |  |  | ?/20 | 1
+| 2 |  | |   | ?/20 | 1
+
+|=========================================================================================================
+
+==== Pire
+
+|=========================================================================================================
+| Num Algo | Efficacité | Qualité | Temps d'exécution | Note | Classement Final
+
+| 2 |  | |   | ?/20 | 1
+
+| 2 |  | |   | ?/20 | 1
 
 |=========================================================================================================
 
 === Sobriété
+
+==== Meilleur
+
+|=========================================================================================================
+| Num Algo | Sobriété Numérique | Qualité | Consommation Electrique | Note | Classement Final
+
+| 2 |  |   |  | ?/20 | 1
+
+| 2 |  |   |  | ?/20 | 1
+
+|=========================================================================================================
+
+==== Pire
+
+|=========================================================================================================
+| Num Algo | Sobriété Numérique | Qualité | Consommation Electrique | Note | Classement Final
+
+| 2 |  |   |  | ?/20 | 1
+
+| 2 |  |   |  | ?/20 | 1
+
+|=========================================================================================================
 
 == Illan Gabarra (1A)
 
