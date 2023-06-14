@@ -222,8 +222,10 @@ Pour mener à bien cette évaluation, plusieurs outils ont été utilisés :
 
 == Présentation des critères de comparaison
 
-La notation des algorithmes sera plus sévère si ces derniers ne fonctionnent pas, ne se compilent pas correctement ou échouent aux tests. Dans ce cas, la note finale sera `divisée par deux` avant d'être convertie sur 20.
+La notation des algorithmes sera plus sévère si ces derniers ne fonctionnent pas, ne se compilent pas correctement ou échouent aux tests. Dans ce cas, la note finale sera `divisée par deux` avant d'être convertie sur 20. +
 
+Pour chaque catégorie, nous allons évaluer la "meilleure" et la "pire" solution. Pour la meilleure solution, nous conserverons la `note la plus élevée`, tandis que pour la pire solution, la `note la plus basse` sera classée en premier.
+ 
 === Lisibilité du code
 
 La lisibilité du code se réfère à sa facilité de compréhension pour les développeurs. Un code bien écrit est clair, bien structuré et utilise des conventions de nommage appropriées. Les bonnes pratiques de lisibilité comprennent l'utilisation de noms de variables significatifs, une indentation cohérente, des commentaires clairs et des espaces blancs judicieux. +
@@ -270,15 +272,15 @@ Une bonne maintenabilité permet de minimiser les coûts de maintenance et de ga
 | Num Algo | Lisibilité | Qualité | Maintenabilité | Note | Classement Final
 
 | 2 | 9/10 | 8/10 | 7/10 | 24/30 +
-=> 16/20 | 1
+=> `*16/20*` | *1*
 
 | 3 |7/10 | 9/10 | 8/10 | 24/30 +
 divisé par 2 car ne fonctionne pas => 12/30 +
-=> `*8/20*`  | 2
+=> 8/20  | 2
 
-| 23 | 8/10 | 7/10 | 6/10 | 21/30 +
-divisé par 2 car ne passe pas les tests => 10.5/30 +
-=> 7/20  | 3
+| 23 | 8/10 | 7/10 | 5/10 | 20/30 +
+divisé par 2 car ne passe pas les tests => 10/30 +
+=> ≈6.6/20  | 3
 
 |=========================================================================================================
 
@@ -318,7 +320,7 @@ divisé par 2 car ne passe pas les tests => 10.5/30 +
 ** _Exemple_ : La variable "motsParLettre" représente la map associant chaque lettre à une liste de mots.
 
 * *Qualité :* 
-** _Justification_ : Fonctionne correctement et renvoie le résultat attendu.
+** _Justification_ : Fonctionne mais ne passe pas les tests, cependant bonne gestion des mots.
 ** _Exemple_ : La méthode "trierMots" divise correctement la phrase en mots, trie les mots par ordre alphabétique et les concatène pour renvoyer la phrase triée.
 
 * *Maintenabilité :* 
@@ -330,11 +332,44 @@ divisé par 2 car ne passe pas les tests => 10.5/30 +
 |=========================================================================================================
 | Num Algo | Lisibilité | Qualité | Maintenabilité | Note | Classement Final
 
-| 2 |  |  |  | ?/20 | 1
+| 28 | 7/10 | 6/10 | 7/10 | 20/30 +
+divisé par 2 car ne passe pas les tests => 10/30 +
+=> ≈6.6/20 | 2
 
-| 2 |  |  |  | ?/20 | 1
+| 37 | 1/10 | 4/10 | 4/10 | 9/30 +
+divisé par 2 car ne passe pas les tests => 4.5/30 +
+=> `*≈ 3/20*` | *1*
 
 |=========================================================================================================
+
+`Algorithme Simplicité - Pire N°28 :` +
+
+* *Lisibilité :* 
+** _Justification_ : Le programme utilise des noms de variables et de fonctions clairs et significatifs. La structure du code est également bien organisée.
+** _Exemple_ : Les noms de variables tels que `phrase`, `ordre`, `mots` et `ordreIndex` sont des exemples de lisibilité du code.
+
+* *Qualité :* 
+** _Justification_ : Le programme utilise des structures de données appropriées pour résoudre le problème, comme les listes et les maps. De plus, il utilise la méthode `sort` avec un comparateur personnalisé pour trier les mots selon l'ordre spécifié.
+** _Exemple_ : L'utilisation de `List<String>`, `Map<Character, Integer>` et `Comparator.comparingInt` pour trier les mots démontre une bonne qualité du code.
+
+* *Maintenabilité :* 
+** _Justification_ : Le code est bien structuré. Cependant une extraction de partie de code pour en faire une méthode distinct manque et n'est pas négligable.
+
+
+`Algorithme Simplicité - Pire N°37 :` +
+
+* *Lisibilité :* 
+** _Justification_ : Le programme utilise des noms de variables et de fonctions clairs et significatifs. Cependant la structure du code est trés mal organisé.
+** _Exemple_ : Les noms de variables tels que `texte`, `ordre` et `mots` sont des exemples de bonne lisibilité du code. Le code n'est pas bien formaté/indenter (tout le code sur une seul ligne)
+
+* *Qualité :* 
+** _Justification_ : Le programme utilise des structures de données appropriées pour résoudre le problème, comme les listes et les maps. De plus, la classe `ComparateurOrdreFixe` implémente l'interface `Comparator` pour personnaliser l'ordre de tri.
+** _Exemple_ : L'utilisation de `List<String>`, `Map<Character, Integer>` et `Comparator<String>` ainsi que l'implémentation de la méthode `compare` dans `ComparateurOrdreFixe` démontrent la qualité du code.
+
+* *Maintenabilité :* 
+** _Justification_ : Le code est bien structuré avec des méthodes et des classes distinctes pour des responsabilités spécifiques. De plus, les commentaires sont absents dans ce programme, ce qui pourrait affecter la maintenabilité à long terme. De plus, la structure du code est trés mal organisé pouvant affecté la prise en charge du code par quelqu'un d'autre.
+** _Exemple_ :  La séparation des fonctionnalités dans des méthodes distinctes, comme `solution` et `compare`, contribue à la maintenabilité du programme. Mais le code sur une seul ligne ne contribue pas a la maintenabilité de celui-ci.
+
 
 === Efficacité
 
