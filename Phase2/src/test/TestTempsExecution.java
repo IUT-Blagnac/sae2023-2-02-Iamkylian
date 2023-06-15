@@ -20,17 +20,23 @@ public class TestTempsExecution {
                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur"
         );
+        
+        double pcConsumptionPerNs = 5.5555556e-11; // Consommation électrique d'un PC en watt par nano seconde
+        double conversionFactor = 1e9 * 60 * 60; // Conversion de nanosecondes à heures
 
         for (String str : testStrings) {
             long startTime = System.nanoTime();
             String result = Exercice.solution(str, ordre);
             long endTime = System.nanoTime();
             long executionTime = endTime - startTime;
+            double executionTimeHours = executionTime / conversionFactor; // Conversion en heures
+            double energyConsumption = pcConsumptionPerNs * executionTimeHours;
             double tempsExecutionMillis = (double) executionTime / 1_000_000; // Conversion en millisecondes
             
             System.out.println("Chaîne de caractères: " + str);
-            System.out.println("Résultat: " + result);
+            System.out.println("Résultat : " + result);
             System.out.println("Temps d'exécution (en milliseconde): " + tempsExecutionMillis);
+            System.out.println("Consommation électrique du programme (en Watt-heure): " + energyConsumption);
             System.out.println("---------------------------------------");
         }
 

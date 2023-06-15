@@ -17,6 +17,23 @@
 
 {empty} +
 
+
+
+== Introduction
+
+[.text-justify]
+La SAE "Exploitation algorithmique d'un problème" comporte deux phases. Dans la première phase, notre objectif est de résoudre un problème qui consiste à classer les mots d'un texte en fonction d'un ordre donné. Pour cela, nous devons respecter certaines contraintes lors de la conception de notre algorithme, notamment en ce qui concerne le choix du langage (Java ou C) et l'utilisation de méthodes spécifiques. De plus, nous devons soumettre deux versions, à savoir la meilleure solution et la pire solution, pour chaque catégorie : simplicité, efficacité et sobriété numérique. +
+
+[.text-justify]
+Dans la deuxième phase du concours, nous travaillons en binôme pour comparer et évaluer les différentes solutions. Nous devons évaluer plusieurs solutions en fonction de critères tels que la lisibilité du code, la qualité du code, l'efficacité, la sobriété numérique et le temps d'exécution, mais nous sommes libres de choisir d'autre critére à condition qu'ils soit pertinents. Nous devons justifier nos analyses et classer les solutions en conséquence. +
+
+[.text-justify]
+Ce concours d'algorithmes nous permet de mettre en pratique nos compétences en programmation, en résolution de problèmes ainsi qu'en analyse algorithmique. +
+
+== Présentation des critères de notation des algorithmes
+
+{empty}
+
 *NOTATION*
 |===
 |*Cas*|*Sanction*
@@ -32,198 +49,7 @@
 |===
 En cas d'ex-aequo, même note. (5/5/3/2 par exemple).
 
-{empty} +
-
-
-
-== Introduction
-
-[.text-justify]
-La SAE "Exploitation algorithmique d'un problème" comporte deux phases. Dans la première phase, notre objectif est de résoudre un problème qui consiste à classer les mots d'un texte en fonction d'un ordre donné. Pour cela, nous devons respecter certaines contraintes lors de la conception de notre algorithme, notamment en ce qui concerne le choix du langage (Java ou C) et l'utilisation de méthodes spécifiques. De plus, nous devons soumettre deux versions, à savoir la meilleure solution et la pire solution, pour chaque catégorie : simplicité, efficacité et sobriété numérique. +
-
-[.text-justify]
-Dans la deuxième phase du concours, nous travaillons en binôme pour comparer et évaluer les différentes solutions. Nous devons évaluer plusieurs solutions en fonction de critères tels que la lisibilité du code, la qualité du code, l'efficacité, la sobriété numérique et le temps d'exécution, mais nous sommes libres de choisir d'autre critére à condition qu'ils soit pertinents. Nous devons justifier nos analyses et classer les solutions en conséquence. +
-
-[.text-justify]
-Ce concours d'algorithmes nous permet de mettre en pratique nos compétences en programmation, en résolution de problèmes ainsi qu'en analyse algorithmique. +
-
-== Notation des algorithmes
-
-=== Kylian GACHET (1A)
-
-{empty} +
-
-|=========================================================================================================
-| Note  | Algo                | Commentaire 
-| 18/20           | 2-simplicite-meilleur.c    | Passe tous les tests fournis initialement      
-
-| 2/20          | 3-simplicitemeilleur.java    | Ne correspond pas à une classe Exercice (cas des main ou des zip) + 
-+ Non respect de la nomenclature précise + 
-+ Ne fonctionne pas (retour eronné, ou pas du bon type attendu) + 
-+ `Suspicion d'utilisation de ChatGPT`
-
-| 5/20          | 23-simplicite-meilleur.java    | Ne correspond pas à une classe Exercice (cas des main ou des zip) + 
-+ Fonctionne mais ne passe pas les tests fournis initialement + 
-+ `Suspicion d'utilisation de ChatGPT`
-
-| 9/20           | 28-Simplicité-pire.java  | Non respect de la nomenclature précise + 
-+ Fonctionne mais ne passe pas les tests fournis initialement + 
-+ `Suspicion d'utilisation de ChatGPT`
-
-| 9/20           |  37-simplicite-pire.java | Non respect de la nomenclature précise + 
-+ Fonctionne mais ne passe pas les tests fournis initialement   + 
-+ `Suspicion d'utilisation de ChatGPT`
-
-| 4.5/20           |  7-efficacite_pire.java  | Ne correspond pas à une classe Exercice (cas des main ou des zip) +
-+ Non respect de la nomenclature précise
-+ Fonctionne mais ne passe pas les tests fournis initialement   
-
-| 5/20           |  20-efficacite-pire.java  | Ne fonctionne pas (retour eronné, ou pas du bon type attendu)   + 
-+ `Suspicion d'utilisation de ChatGPT`  
-
-| 9.5/20           | 22-Efficacite-Meilleur.java | Ne correspond pas à une classe Exercice (cas des main ou des zip) + 
-+ Non respect de la nomenclature précise
-+ Passe vos tests supplémentaires plus complets 
-+ `Suspicion d'utilisation de ChatGPT`       
-
-| 5/20 et Hors concours   | 57-efficacite-meilleur.java    | Ne compile pas + 
-+ Fonctionne mais ne passe pas les tests fournis initialement + 
-+ `Suspicion d'utilisation de ChatGPT`  
-
-| 2.5/20           | 5-sobriete-pire.java    | Ne correspond pas à une classe Exercice (cas des main ou des zip) + 
-+ Ne fonctionne pas (retour eronné, ou pas du bon type attendu) + 
-+ `Suspicion d'utilisation de ChatGPT`      
-
-| 9.5/20           |   22-Sobriété-Pire.java     | Ne correspond pas à une classe Exercice (cas des main ou des zip) + 
-+ Non respect de la nomenclature précise
-+ Passe vos tests supplémentaires plus complets  + 
-+ `Suspicion d'utilisation de ChatGPT`  
-
-| 18/20           | 36-sobriete-meilleur.java   | Passe tous les tests fournis initialement + 
-+ `Suspicion d'utilisation de ChatGPT`  
-
-| 18/20           | 58-sobriete-meilleure.java   | Passe tous les tests fournis initialement + 
-+ `Suspicion d'utilisation de ChatGPT`  
-
-|=========================================================================================================
-
-{empty} +
-
-=== Illan GABARRA (1A)
-
-{empty} +
-
-|=========================================================================================================
-| Note  | Algo                | Commentaire 
-| 17/20           | 20-efficacite-meilleur.c    | 
-Passe tous les tests fournis initialement
-
-Mais pas les tests supplémentaires
-
-Hors concours car utilise la fonction qsort hors dans la catégorie efficacite il ne fallait pas l'utiliser
-
-| 4.5/20          | 56-efficacite-meilleur.java    |
-Ne passe pas tous les tests fournis initialement
-
-Ne respecte pas la nomenclature précise
-
-Suspicion de chatGPT
-
-Hors concours car ne compile pas
-
-| 20/20           | 17-efficacite-pire.java  | 
-
-Passe tous les tests même les tests supplémentaires
-
-Suspicion de chatGPT
-
-| 2/20          |  68-EfficacitePire.java |
-
-Ne fonctionne pas
-
-Ne respecte pas la nomenclature précise
-
-Suspicion de chatGPT
-
-Hors concours car ne compile pas
-
-| 2.5/20           |  6-sae2023-2-02-NOM-main.zip  |
-
-Ne correspond pas à une classe Exercice (ZIP du dépot git)
-
-Après rajout de beaucoup d'import : Fonctionne mais ne passe pas les tests fournis initialement
-
-Hors concours car ne compile pas
-
-| 17/20           |  54-simplicite-meilleur.java  |
-
-Passe tous les tests fournis initialement
-
-Mais pas les tests supplémentaires
-
-| 4/20           | 65-Simplicite-Meilleur.java | 
-
-Ne fonctionne pas
-
-Ne respecte pas la nomenclature précise
-
-| 20/20           | 29-simplicite-pire.java    |
-
-Passe tous les tests même les tests supplémentaires
-
-| 9/20           | 36-simplicite-pire.java    |   
-
-Ne passe pas tous les tests fournis initialement
-
-Ne respecte pas la nomenclature précise
-
-| 19/20           |   34-sobriete-meilleur.java     | 
-
-Ne respecte pas la nomenclature précise
-
-Passe tous les tests même les tests supplémentaires
-
-Suspicion de chatGPT
-
-| 2/20           | 57-sobriete-meilleur.java   |
-
-Ne fonctionne pas
-
-Ne respecte pas la nomenclature précise
-
-Suspicion de chatGPT
-
-Hors concours car ne compile pas
-
-| 10/20           | 20-sobriete-pire.java   |
-
-Ne passe pas tous les tests fournis initialement
-
-| 4/20           | 49-PireSobrieteNumerique.java   |
-
-Ne fonctionne pas
-
-Ne respecte pas la nomenclature précise
-
-Suspicion de chatGPT
-
-|=========================================================================================================
-
-{empty} +
-
-== Présentation des outils d'évaluation
-
-[.text-justify]
-Pour mener à bien cette évaluation, plusieurs outils ont été utilisés :
-
-[.text-justify]
-* *Codacy :* Cet outil open source a été utilisé pour mesurer la qualité du code des différentes solutions. Il fournit des informations sur la maintenabilité, la lisibilité et les bonnes pratiques de codage.
-
-* *Joular :* Cet outil a été utilisé pour évaluer la consommation en ressources des algorithmes, en se concentrant notamment sur la consommation énergétique.
-
-* *Java Profiler :* Cet outil a permis de mesurer le temps d'exécution des différents algorithmes, en fournissant des données précises sur les performances de chaque solution.
-
-* *TempsExecution.java :* Ce programme que nous avons développé nous a été utile pour tester les temps d'éxecutions des algorithmes.
+{empty}
 
 == Présentation des critères de comparaison
 
@@ -277,6 +103,20 @@ Une bonne maintenabilité permet de minimiser les coûts de maintenance et de ga
 === Consomation électrique
 
 
+== Présentation des outils d'évaluation
+
+[.text-justify]
+Pour mener à bien cette évaluation, plusieurs outils ont été utilisés :
+
+[.text-justify]
+* *Codacy :* Cet outil open source a été utilisé pour mesurer la qualité du code des différentes solutions. Il fournit des informations sur la maintenabilité, la lisibilité et les bonnes pratiques de codage.
+
+* *Joular :* Cet outil a été utilisé pour évaluer la consommation en ressources des algorithmes, en se concentrant notamment sur la consommation énergétique.
+
+* *TempsExecution.java :* Ce programme que nous avons développé nous a été utile pour tester les temps d'éxecutions des algorithmes. Cet outil a permis de mesurer le temps d'exécution des différents algorithmes, en fournissant des données précises sur les performances de chaque solution.
+
+* *TempsExecution.java :*
+
 
 == Kylian GACHET (1A)
 
@@ -287,16 +127,16 @@ Une bonne maintenabilité permet de minimiser les coûts de maintenance et de ga
 |=========================================================================================================
 | Num Algo | Lisibilité | Qualité | Maintenabilité | Note | Classement Final
 
-| 2 | 9/10 | 8/10 | 7/10 | 24/30 +
-=> `*16/20*` | *1*
+| 2 | 9/10 | 10/10 | 7/10 | 26/30 +
+=> `*≈17.3/20*` | *1*
 
-| 3 |7/10 | 9/10 | 8/10 | 24/30 +
-divisé par 2 car ne fonctionne pas => 12/30 +
-=> 8/20  | 2
+| 3 |7/10 | 7/10 | 8/10 | 22/30 +
+divisé par 2 car ne fonctionne pas => 11/30 +
+=> ≈7.3/20  | 2
 
-| 23 | 8/10 | 7/10 | 5/10 | 20/30 +
-divisé par 2 car ne passe pas les tests => 10/30 +
-=> ≈6.6/20  | 3
+| 23 | 8/10 | 4/10 | 5/10 | 17/30 +
+divisé par 2 car ne passe pas les tests => 8.5/30 +
+=> ≈5.6/20  | 3
 
 |=========================================================================================================
 
@@ -323,13 +163,13 @@ divisé par 2 car ne passe pas les tests => 10/30 +
 ** _Exemple_ : Le commentaire explique clairement que la fonction "solution" trie les mots d'une chaîne de caractères selon un ordre spécifié.
 
 * *Qualité :* 
-** _Justification_ : Approche originale qui évite les comparaisons entre les chaînes de caractères.
-** _Exemple_ : Utilisation d'une table de correspondance pour déterminer l'ordre des mots, ce qui peut améliorer la qualité en évitant des opérations coûteuses de comparaison.
+** _Justification_ : Approche originale qui évite les comparaisons entre les chaînes de caractères. De plus `Codacy` a detecté : Pas de package. Trop  de caractére sur une même ligne. +
+Toutes les classes, interfaces, énumérations et annotations doivent appartenir à un package nommé
+** _Exemple_ : Utilisation d'une table de correspondance pour déterminer l'ordre des mots, ce qui peut améliorer la qualité en évitant des opérations coûteuses de comparaison. +
 
 * *Maintenabilité :* 
 ** _Justification_ : Utilisation de fonctions distinctes pour rendre le code modulaire.
 ** _Exemple_ : La fonction "diviserMots" extrait les mots d'une chaîne de caractères, ce qui facilite la maintenance et la réutilisation du code.
-
 
 `Algorithme Simplicité - Meilleur N°23 :` +
 
@@ -339,7 +179,7 @@ divisé par 2 car ne passe pas les tests => 10/30 +
 ** _Exemple_ : La variable "motsParLettre" représente la map associant chaque lettre à une liste de mots.
 
 * *Qualité :* 
-** _Justification_ : Fonctionne mais ne passe pas les tests, cependant bonne gestion des mots.
+** _Justification_ : Fonctionne mais ne passe pas les tests, cependant bonne gestion des mots. De plus `Codacy` a detecté qu'il avait parfois des caractére inutile.
 ** _Exemple_ : La méthode "trierMots" divise correctement la phrase en mots, trie les mots par ordre alphabétique et les concatène pour renvoyer la phrase triée.
 
 * *Maintenabilité :* 
@@ -384,7 +224,7 @@ divisé par 2 car ne passe pas les tests => 4.5/30 +
 ** _Exemple_ : Les noms de variables tels que `texte`, `ordre` et `mots` sont des exemples de bonne lisibilité du code. Le code n'est pas bien formaté/indenter (tout le code sur une seul ligne)
 
 * *Qualité :* 
-** _Justification_ : Le programme utilise des structures de données appropriées pour résoudre le problème, comme les listes et les maps. De plus, la classe `ComparateurOrdreFixe` implémente l'interface `Comparator` pour personnaliser l'ordre de tri.
+** _Justification_ : Le programme utilise des structures de données appropriées pour résoudre le problème, comme les listes et les maps. De plus, la classe `ComparateurOrdreFixe` implémente l'interface `Comparator` pour personnaliser l'ordre de tri. De plus Codacy a detecté que : L'utilisation de la forme d'importation `.* doit être évitée - java.util.*`. Et que : `'import'` doit être séparé de la ligne précédente ainsi que chaque ligne doit être séparé par une ligne.
 ** _Exemple_ : L'utilisation de `List<String>`, `Map<Character, Integer>` et `Comparator<String>` ainsi que l'implémentation de la méthode `compare` dans `ComparateurOrdreFixe` démontrent la qualité du code.
 
 * *Maintenabilité :* 
@@ -399,22 +239,78 @@ divisé par 2 car ne passe pas les tests => 4.5/30 +
 |=========================================================================================================
 | Num Algo | Efficacité | Qualité | Temps d'exécution | Note | Classement Final
 
-| 2 |  | |   |  ?/20 | 1
+| 22 |  | |   |  ?/20 | 1
 
-| 2 |  | |   | ?/20 | 1
+| 57 |  | |   | ?/20 | 1
 
 |=========================================================================================================
+
+`Algorithme Efficacité - Meilleur N°22 :` +
+
+* *Efficacité :* 
+** _Justification_ : Complexité (O(n)...)
+** _Exemple_ : 
+
+* *Qualité :* 
+** _Justification_ : 
+** _Exemple_ : 
+
+* *Temps d'exécution :* 
+** _Justification_ : 
+** _Exemple_ : 
+
+`Algorithme Efficacité - Meilleur N°57 :` +
+
+* *Efficacité :* 
+** _Justification_ : 
+** _Exemple_ : 
+
+* *Qualité :* 
+** _Justification_ : 
+** _Exemple_ : 
+
+* *Temps d'exécution :* 
+** _Justification_ : 
+** _Exemple_ : 
 
 ==== Pire
 
 |=========================================================================================================
 | Num Algo | Efficacité | Qualité | Temps d'exécution | Note | Classement Final
 
-| 2 |  | |   | ?/20 | 1
+| 7 |  | |   | ?/20 | 1
 
-| 2 |  | |   | ?/20 | 1
+| 20 |  | |   | ?/20 | 1
 
 |=========================================================================================================
+
+`Algorithme Efficacité - Pire N°7 :` +
+
+* *Efficacité :* 
+** _Justification_ : Complexité (O(n)...)
+** _Exemple_ : 
+
+* *Qualité :* 
+** _Justification_ : 
+** _Exemple_ : 
+
+* *Temps d'exécution :* 
+** _Justification_ : 
+** _Exemple_ : 
+
+`Algorithme Efficacité - Pire N°20 :` +
+
+* *Efficacité :* 
+** _Justification_ : Complexité (O(n)...)
+** _Exemple_ : 
+
+* *Qualité :* 
+** _Justification_ : 
+** _Exemple_ : 
+
+* *Temps d'exécution :* 
+** _Justification_ : 
+** _Exemple_ : 
 
 === Sobriété
 
@@ -423,22 +319,78 @@ divisé par 2 car ne passe pas les tests => 4.5/30 +
 |=========================================================================================================
 | Num Algo | Sobriété Numérique | Qualité | Consommation Electrique | Note | Classement Final
 
-| 2 |  |   |  | ?/20 | 1
+| 36 |  |   |  | ?/20 | 1
 
-| 2 |  |   |  | ?/20 | 1
+| 58 |  |   |  | ?/20 | 1
 
 |=========================================================================================================
+
+`Algorithme Sobriété - Meilleur N°36 :` +
+
+* *Sobriété Numérique :* 
+** _Justification_ : Complexité (O(n)...)
+** _Exemple_ : 
+
+* *Qualité :* 
+** _Justification_ : 
+** _Exemple_ : 
+
+* *Consommation Electrique :* 
+** _Justification_ : 
+** _Exemple_ : 
+
+`Algorithme Sobriété - Meilleur N°58 :` +
+
+* *Sobriété Numérique :* 
+** _Justification_ : Complexité (O(n)...)
+** _Exemple_ : 
+
+* *Qualité :* 
+** _Justification_ : 
+** _Exemple_ : 
+
+* *Consommation Electrique :* 
+** _Justification_ : 
+** _Exemple_ : 
 
 ==== Pire
 
 |=========================================================================================================
 | Num Algo | Sobriété Numérique | Qualité | Consommation Electrique | Note | Classement Final
 
-| 2 |  |   |  | ?/20 | 1
+| 5 |  |   |  | ?/20 | 1
 
-| 2 |  |   |  | ?/20 | 1
+| N°22 |  |   |  | ?/20 | 1
 
 |=========================================================================================================
+
+`Algorithme Sobriété - Pire N°5 :` +
+
+* *Sobriété Numérique :* 
+** _Justification_ : Complexité (O(n)...)
+** _Exemple_ : 
+
+* *Qualité :* 
+** _Justification_ : 
+** _Exemple_ : 
+
+* *Consommation Electrique :* 
+** _Justification_ : 
+** _Exemple_ : 
+
+`Algorithme Sobriété - Pire N°22 :` +
+
+* *Sobriété Numérique :* 
+** _Justification_ : Complexité (O(n)...)
+** _Exemple_ : 
+
+* *Qualité :* 
+** _Justification_ : 
+** _Exemple_ : 
+
+* *Consommation Electrique :* 
+** _Justification_ : 
+** _Exemple_ : 
 
 == Illan Gabarra (1A)
 
