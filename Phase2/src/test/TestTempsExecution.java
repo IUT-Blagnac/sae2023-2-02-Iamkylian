@@ -36,7 +36,7 @@ public class TestTempsExecution {
             System.out.println("Chaîne de caractères: " + str);
             System.out.println("Résultat : " + result);
             System.out.println("Temps d'exécution (en milliseconde): " + tempsExecutionMillis);
-            System.out.println("Consommation électrique du programme (en Watt-heure): " + energyConsumption);
+            System.out.printf("Consommation électrique du programme (en Watt-heure): %.5f%n", energyConsumption);
             System.out.println("---------------------------------------");
         }
 
