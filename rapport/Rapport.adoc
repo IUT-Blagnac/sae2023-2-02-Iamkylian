@@ -117,6 +117,36 @@ Pour mener à bien cette évaluation, plusieurs outils ont été utilisés :
 
 * *TempsExecution.java :*
 
+== Prérequis
+[.text-justify]
+Vérifier la présence du fichier ``.java`` que vous souhaité analyser dans le répertoire ``~/src/analyse/CodeEvaluation``. +
+ +
+
+[.text-justify]
+Remplacer la ligne n°7 du fichier ``EraserTest.java`` du répertoire ``~/src/test/java`` par le code suivant : +
+
+[SOURCE, java]
+----
+import analyse.CodeEvaluation.nomfichier.java;
+----
+
+[.text-justify]
+Et remplacer toutes les notations ``Exercice`` du fichier par ``nomfichierjava``.
+
+[.text-jutify]
+Ce programme de test permet de vérifier que le programme traite bien tous les cas donnés. +
+ +
+
+[.text-justify]
+Le fichier ``TestTempsExecution.java`` du répertoire ``~/src/analyse`` permet d'obtenir les temps d'exécution du programme en fonction de chaînes générées aléatoirement de tailles données.
+
+
+== Reproductibilité
+[.text-justify]
+Lancer le code de ``ExerciceTest.java``et vérifier que le programme traite tous les cas donnés.
+
+[.text-justify]
+Lancer le code de ``TestTempsExecution.java`` et analyser les temps d'exécution en fonction des différentes tailles des chaînes de caractères pour la partie "TEST DU PROGRAMME nomfichier".
 
 == Kylian GACHET (1A)
 
