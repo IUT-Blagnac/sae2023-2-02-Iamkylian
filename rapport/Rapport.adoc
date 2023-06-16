@@ -90,7 +90,7 @@ Nous allons utiliser des outils tels que `Joular` peuvent mesurer la consommatio
 [.text-justify]
 Le temps d'exécution fait référence à la durée nécessaire pour exécuter un programme ou une partie spécifique du code. Mesurer le temps d'exécution permet d'identifier les parties du code qui prennent le plus de temps, ce qui peut aider à cibler les optimisations. +
 Réduire le temps d'exécution peut améliorer les performances globales du code et offrir une meilleure expérience utilisateur. +
-Afin de mesurer le temps d'execution nous allons utiliser le programme `TestTempsExecution.java` codé par nos soins.
+Afin de mesurer le temps d'execution nous allons utiliser le programme `TestConsoElecEtTempsExec.java` codé par nos soins.
 
 === Maintenabilité
 
@@ -103,7 +103,8 @@ Une bonne maintenabilité permet de minimiser les coûts de maintenance et de ga
 [.text-justify]
 La consommation électrique est la quantité d'énergie électrique consommée par un code. Elle est mesurée en watts (W) et peut être calculée en multipliant la puissance électrique par le temps d'exécution. +
 La consommation électrique est un facteur important à prendre en compte lors de la conception d'un code, car elle peut avoir un impact sur la durée de vie de la batterie de l'appareil, ainsi qu'une utilisation des ressources de manière inefficace. +
-On va calculer 
+La consommation électrique est calculée en mesurant le temps d'exécution du programme et en le multipliant par une valeur de consommation électrique en Watt (consommation moyenne d'un pc en Watt), puis en faisant le log10() de ce résultat, pour enfin retourner sa valeur absolue pour avoir un indicateur cohérent entre 1 et 10. +
+Afin de mesurer la consommation électrique nous allons utiliser le programme `TestConsoElecEtTempsExec.java` codé par nos soins.
 
 == Présentation des outils d'évaluation
 
@@ -140,7 +141,7 @@ Ce programme de test permet de vérifier que le programme traite bien tous les c
  +
 
 [.text-justify]
-Le fichier ``TestTempsExecution.java`` du répertoire ``~/src/analyse`` permet d'obtenir les temps d'exécution du programme en fonction de chaînes générées aléatoirement de tailles données.
+Le fichier ``TestConsoElecEtTempsExec.java`` du répertoire ``~/src/analyse`` permet d'obtenir les temps d'exécution du programme en fonction de chaînes générées aléatoirement de tailles données.
 
 
 == Reproductibilité
@@ -148,7 +149,7 @@ Le fichier ``TestTempsExecution.java`` du répertoire ``~/src/analyse`` permet d
 Lancer le code de ``ExerciceTest.java``et vérifier que le programme traite tous les cas donnés.
 
 [.text-justify]
-Lancer le code de ``TestTempsExecution.java`` et analyser les temps d'exécution en fonction des différentes tailles des chaînes de caractères pour la partie "TEST DU PROGRAMME nomfichier".
+Lancer le code de ``TestConsoElecEtTempsExec.java`` et analyser les temps d'exécution en fonction des différentes tailles des chaînes de caractères pour la partie "TEST DU PROGRAMME nomfichier".
 
 == Kylian GACHET (1A)
 
@@ -292,7 +293,7 @@ divisé par 2 car ne passe pas les tests => 8.5/30 +
 ** _Exemple_ : La méthode `solution` pourrait bénéficier d'une meilleure gestion des erreurs, telle que la vérification des paramètres d'entrée pour éviter les valeurs nulles ou non valides. De plus, une documentation plus détaillée des méthodes, en utilisant des commentaires JavaDoc, permettrait de mieux comprendre leur fonctionnement et leur utilisation.
 
 * *Temps d'exécution :* 
-** _Justification_ : Les temps d’exécution analysés via le programme `TestTempsExecution.java` (en milli-secondes) semblent être inconstants et dépendent surtout du nombre et du placement des espaces contenus dans les chaînes de caractère données.
+** _Justification_ : Les temps d’exécution analysés via le programme `TestConsoElecEtTempsExec.java` (en milli-secondes) semblent être inconstants et dépendent surtout du nombre et du placement des espaces contenus dans les chaînes de caractère données.
 
 |===
 |*Tailles des chaînes (avec espace)*|*Temps d'exécution*
@@ -331,7 +332,7 @@ Cependant, l'absence de commentaires Javadoc peut rendre le code moins compréhe
 `Codacy` n'a pas remarquer de quelconque proléme avec ce code.
 
 * *Temps d'exécution :* 
-** _Justification_ : Les temps d’exécution analysés via le programme `TestTempsExecution.java` (en milli-secondes) semblent être inconstants et dépendent surtout du nombre et du placement des espaces contenus dans les chaînes de caractère données. Cependant on remarque que le programme met beaucoup de temps pour 1 caractére mais beaucoup moins de temps que la moyenne pour 1000 caractéres.
+** _Justification_ : Les temps d’exécution analysés via le programme `TestConsoElecEtTempsExec.java` (en milli-secondes) semblent être inconstants et dépendent surtout du nombre et du placement des espaces contenus dans les chaînes de caractère données. Cependant on remarque que le programme met beaucoup de temps pour 1 caractére mais beaucoup moins de temps que la moyenne pour 1000 caractéres.
 
 |===
 |*Tailles des chaînes (avec espace)*|*Temps d'exécution*
@@ -367,7 +368,7 @@ divisé par 2 car ne passe pas les tests et ne réalise pas en aucun cas ce qui 
 ** _Exemple_ : Les nom de variable tels que : `ordre` et `result` sont descriptives.
 
 * *Temps d'exécution :* 
-** _Justification_ : Les temps d’exécution analysés via le programme `TestTempsExecution.java` (en milli-secondes) semblent dépendre surtout du nombre et du placement des espaces contenus dans les chaînes de caractère données. Le temps d'éxecution est proportionnel a la taille de la liste.
+** _Justification_ : Les temps d’exécution analysés via le programme `TestConsoElecEtTempsExec.java` (en milli-secondes) semblent dépendre surtout du nombre et du placement des espaces contenus dans les chaînes de caractère données. Le temps d'éxecution est proportionnel a la taille de la liste.
 
 |===
 |*Tailles des chaînes (avec espace)*|*Temps d'exécution*
@@ -389,7 +390,7 @@ divisé par 2 car ne passe pas les tests et ne réalise pas en aucun cas ce qui 
 ** _Exemple_ : En utilisant des noms de variables et de méthodes descriptifs, il devient plus facile de comprendre le but et la logique du code. Par exemple, la variable `splited` indique qu'elle contient les mots découpés à partir de la chaîne de caractères donnée. De même, la méthode `compare` suggère qu'elle est utilisée pour comparer deux mots selon l'ordre spécifié. Cela améliore la lisibilité du code et facilite la maintenance à long terme.
 
 * *Temps d'exécution :* 
-** _Justification_ : Les temps d'exécution mesurés à l'aide du programme `TestTempsExecution.java` en millisecondes semblent varier et dépendent principalement du nombre et de l'emplacement des espaces présents dans les chaînes de caractères données.
+** _Justification_ : Les temps d'exécution mesurés à l'aide du programme `TestConsoElecEtTempsExec.java` en millisecondes semblent varier et dépendent principalement du nombre et de l'emplacement des espaces présents dans les chaînes de caractères données.
 
 |===
 |*Tailles des chaînes (avec espace)*|*Temps d'exécution*
