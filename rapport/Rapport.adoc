@@ -115,7 +115,7 @@ Pour mener à bien cette évaluation, plusieurs outils ont été utilisés :
 
 * *TempsExecution.java :* Ce programme que nous avons développé nous a été utile pour tester les temps d'éxecutions des algorithmes. Cet outil a permis de mesurer le temps d'exécution des différents algorithmes, en fournissant des données précises sur les performances de chaque solution.
 
-* *TempsExecution.java :*
+* *TestConsoElectrique.java :*
 
 == Prérequis
 [.text-justify]
@@ -158,7 +158,7 @@ Lancer le code de ``TestTempsExecution.java`` et analyser les temps d'exécution
 | Num Algo | Lisibilité | Qualité | Maintenabilité | Note | Classement Final
 
 | 2 | 9/10 | 10/10 | 7/10 | 26/30 +
-=> `*≈17.3/20*` | *1*
+=> `*≈17.3/20*` | #*1*#
 
 | 3 |7/10 | 7/10 | 8/10 | 22/30 +
 divisé par 2 car ne fonctionne pas => 11/30 +
@@ -227,7 +227,7 @@ divisé par 2 car ne passe pas les tests => 10/30 +
 
 | 37 | 1/10 | 4/10 | 4/10 | 9/30 +
 divisé par 2 car ne passe pas les tests => 4.5/30 +
-=> `*≈ 3/20*` | *1*
+=> `*≈ 3/20*` | #*1*#
 
 |=========================================================================================================
 
@@ -254,7 +254,7 @@ divisé par 2 car ne passe pas les tests => 4.5/30 +
 ** _Exemple_ : Les noms de variables tels que `texte`, `ordre` et `mots` sont des exemples de bonne lisibilité du code. Le code n'est pas bien formaté/indenter (tout le code sur une seul ligne)
 
 * *Qualité :* 
-** _Justification_ : Le programme utilise des structures de données appropriées pour résoudre le problème, comme les listes et les maps. De plus, la classe `ComparateurOrdreFixe` implémente l'interface `Comparator` pour personnaliser l'ordre de tri. De plus Codacy a detecté que : L'utilisation de la forme d'importation `.* doit être évitée - java.util.*`. Et que : `'import'` doit être séparé de la ligne précédente ainsi que chaque ligne doit être séparé par une ligne.
+** _Justification_ : Le programme utilise des structures de données appropriées pour résoudre le problème, comme les listes et les maps. De plus, la classe `ComparateurOrdreFixe` implémente l'interface `Comparator` pour personnaliser l'ordre de tri. De plus `Codacy` a detecté que : L'utilisation de la forme d'importation `.* doit être évitée - java.util.*`. Et que : `'import'` doit être séparé de la ligne précédente ainsi que chaque ligne doit être séparé par une ligne.
 ** _Exemple_ : L'utilisation de `List<String>`, `Map<Character, Integer>` et `Comparator<String>` ainsi que l'implémentation de la méthode `compare` dans `ComparateurOrdreFixe` démontrent la qualité du code.
 
 * *Maintenabilité :* 
@@ -269,39 +269,73 @@ divisé par 2 car ne passe pas les tests => 4.5/30 +
 |=========================================================================================================
 | Num Algo | Efficacité | Qualité | Temps d'exécution | Note | Classement Final
 
-| 22 |  | |   |  ?/20 | 1
+| 22 | 7 | 8 | 8  |  23/30 +
+=> `≈15.3/20` | #*1*#
 
-| 57 |  | |   | ?/20 | 1
+| 57 | 3 | 7 | 7  | 17/30 +
+divisé par 2 car ne passe pas les tests => 8.5/30 +
+=> ≈5.6/20 | 2
 
 |=========================================================================================================
 
 `Algorithme Efficacité - Meilleur N°22 :` +
 
 * *Efficacité :* 
-** _Justification_ : Complexité (O(n)...)
-** _Exemple_ : 
+** _Justification_ : L'efficacité du programme dépend principalement de l'implémentation de la méthode sortWords qui effectue le tri des mots. La complexité actuelle de l'algorithme de tri est `*O(n^2)*`, ce qui implqiue que c'est un algorithme dont le temps d'exécution augmente quadratiquement avec la taille de l'entrée n.
+** _Exemple_ : Dans l'état actuel du code, l'algorithme de tri utilise une approche de comparaison caractère par caractère, ce qui peut entraîner des performances moins optimales pour de grandes listes de mots.
 
 * *Qualité :* 
-** _Justification_ : 
-** _Exemple_ : 
+** _Justification_ : Le code est bien structuré et facile à lire. Les noms de variables sont appropriés et les commentaires sont présents pour expliquer le but des différentes parties du code. Cependant, il pourrait y avoir des améliorations possibles en termes de gestion des erreurs, de gestion des exceptions et de documentation plus détaillée pour faciliter la compréhension et la maintenance du code. De plus `Codacy` detecte plusieurs lignes avec trop de caratéres ce qui peut compliquer la lecture du code.
+** _Exemple_ : La méthode `solution` pourrait bénéficier d'une meilleure gestion des erreurs, telle que la vérification des paramètres d'entrée pour éviter les valeurs nulles ou non valides. De plus, une documentation plus détaillée des méthodes, en utilisant des commentaires JavaDoc, permettrait de mieux comprendre leur fonctionnement et leur utilisation.
 
 * *Temps d'exécution :* 
-** _Justification_ : 
-** _Exemple_ : 
+** _Justification_ : Les temps d’exécution analysés via le programme `TestTempsExecution.java` (en milli-secondes) semblent être inconstants et dépendent surtout du nombre et du placement des espaces contenus dans les chaînes de caractère données.
+
+|===
+|*Tailles des chaînes (avec espace)*|*Temps d'exécution*
+|1 caractères|~0.6329 ms
+|10 caractères|~0.0429 ms
+|100 caractères|~0.1554 ms
+|1000 caractères|~3.3582 ms
+|===
+
 
 `Algorithme Efficacité - Meilleur N°57 :` +
 
 * *Efficacité :* 
 ** _Justification_ : 
+
+*** Création de la HashMap (orderMap) : +
+*Complexité* : `O(n)`, où n est la taille de la liste d'ordre. +
+_Justification_ : La création de la HashMap se fait en parcourant la liste d'ordre une fois et en insérant chaque élément dans la HashMap.
+
+*** Parcours du texte caractère par caractère : +
+*Complexité :* `O(m)`, où m est la longueur du texte. +
+Justification : Le code parcourt chaque caractère du texte une seule fois pour construire les mots.
+
+*** Tri des mots (sortWords) : +
+*Complexité :* `O(k * n^2)`, où n est le nombre de mots et k est la longueur moyenne des mots. +
+Justification : Le tri des mots se fait en utilisant une méthode de comparaison caractère par caractère. Dans le pire des cas, cela nécessite une comparaison de chaque caractère de chaque paire de mots, ce qui conduit à une complexité quadratique. +
+ +
+
+En combinant ces parties, la complexité globale du programme est estimée à #O(m + n^2 * k)#, où m est la longueur du texte, n est le nombre de mots et k est la longueur moyenne des mots. Cette estimation est approximative et peut varier en fonction de la taille réelle du texte, du nombre de mots et de la longueur des mots. #O(m + n^2 * k)# a une complexité trés élevée, car elle dépend non seulement de n^2, mais aussi de m et k. Cela signifie que le temps d'exécution peut augmenter de façon significative en fonction de ces paramètres supplémentaires. Si m, n et k sont tous relativement grands, alors cette complexité peut être très inefficace.
 ** _Exemple_ : 
 
 * *Qualité :* 
-** _Justification_ : 
-** _Exemple_ : 
+** _Justification_ : Il est bien structuré et facile à lire grâce à une indentation correcte et à des noms de variables et de fonctions significatifs. De plus, il utilise des listes pour stocker les caractères et les chaînes de caractères, ce qui est une approche appropriée pour résoudre le problème. +
+Cependant, l'absence de commentaires Javadoc peut rendre le code moins compréhensible pour les autres développeurs qui souhaitent l'utiliser ou le maintenir. Les commentaires Javadoc aident à documenter les classes, les méthodes, les paramètres et les valeurs de retour, ce qui facilite la compréhension du code et son utilisation correcte. +
+`Codacy` n'a pas remarquer de quelconque proléme avec ce code.
 
 * *Temps d'exécution :* 
-** _Justification_ : 
-** _Exemple_ : 
+** _Justification_ : Les temps d’exécution analysés via le programme `TestTempsExecution.java` (en milli-secondes) semblent être inconstants et dépendent surtout du nombre et du placement des espaces contenus dans les chaînes de caractère données. Cependant on remarque que le programme met beaucoup de temps pour 1 caractére mais beacoup moins de temps que la moyenne pour 1000 caractéres.
+
+|===
+|*Tailles des chaînes (avec espace)*|*Temps d'exécution*
+|1 caractères|~4.5043 ms
+|10 caractères|~0.046 ms
+|100 caractères|~0.1107 ms
+|1000 caractères|~1.1139 ms
+|===
 
 ==== Pire
 
@@ -326,7 +360,14 @@ divisé par 2 car ne passe pas les tests => 4.5/30 +
 
 * *Temps d'exécution :* 
 ** _Justification_ : 
-** _Exemple_ : 
+
+|===
+|*Tailles des chaînes (avec espace)*|*Temps d'exécution*
+|1 caractères|~0.6329 ms
+|10 caractères|~0.0429 ms
+|100 caractères|~0.1554 ms
+|1000 caractères|~3.3582 ms
+|===
 
 `Algorithme Efficacité - Pire N°20 :` +
 
@@ -340,7 +381,14 @@ divisé par 2 car ne passe pas les tests => 4.5/30 +
 
 * *Temps d'exécution :* 
 ** _Justification_ : 
-** _Exemple_ : 
+
+|===
+|*Tailles des chaînes (avec espace)*|*Temps d'exécution*
+|1 caractères|~0.6329 ms
+|10 caractères|~0.0429 ms
+|100 caractères|~0.1554 ms
+|1000 caractères|~3.3582 ms
+|===
 
 === Sobriété
 

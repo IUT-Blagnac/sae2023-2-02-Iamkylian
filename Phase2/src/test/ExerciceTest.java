@@ -20,11 +20,11 @@ public class ExerciceTest {
         assertEquals(List.of("fait", "Il", "aujourd", "aout", "beau", "hui", "comme", "en"),
         		exercice.Exercice.solution("Il fait beau aujourd'hui comme en aout",List.of('f', 'I', 'z', 'u', 'k', 'a', 'b', 'o')));
         // Ajoutez vos test ici...
-        
-        assertEquals(List.of("fait", "Il", "aujourd", "aout", "beau", "comme", "hui", "en"), 
+
+        assertEquals(List.of("fait", "Il", "aujourd", "aout", "beau", "comme", "hui", "en"),
         		exercice.Exercice.solution("Il fait beau comme aujourd'hui en aout", List.of('f', 'I', 'z', 'u', 'k', 'a', 'b', 'o')));
-        
-        assertEquals(List.of("fait", "Il", "aujourd", "aout", "beau", "comme", "hui", "en"), 
+
+        assertEquals(List.of("fait", "Il", "aujourd", "aout", "beau", "comme", "hui", "en"),
         		exercice.Exercice.solution("Il fait beau aout comme aujourd'hui en", List.of('f', 'I', 'z', 'u', 'k', 'a', 'b', 'o')));
     }
 }

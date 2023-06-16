@@ -1,40 +1,48 @@
 package exercice;
 
-import java.util.List;
-import java.util.Map;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 public class Exercice {
-	public static String solution(String phrase, List<Character> alphabet) {
-        // Créer une map pour associer chaque lettre à une liste de mots commençant par cette lettre
-        Map<Character, List<String>> motsParLettre = new HashMap<>();
-        for (char lettre : alphabet) {
-            motsParLettre.put(lettre, new ArrayList<>());
+    public static List<String> solution(String str, List<Character> ordre) {
+        Map<Character, Integer> orderMap = new HashMap<>();
+        int index = 0;
+        for (char c : ordre) {
+            orderMap.put(c, index);
+            index++;
         }
 
-        // Diviser la phrase en mots
-        String[] mots = phrase.toLowerCase().split("\\W+");
-
-        // Parcourir chaque mot et l'ajouter à la liste correspondante dans la map
-        for (String mot : mots) {
-            if (!mot.isEmpty()) {
-                char premiereLettre = mot.charAt(0);
-                if (motsParLettre.containsKey(premiereLettre)) {
-                    motsParLettre.get(premiereLettre).add(mot);
+        List<String> mots = new ArrayList<>();
+        StringBuilder motActuel = new StringBuilder();
+        for (char c : str.toCharArray()) {
+            if (Character.isLetter(c) || Character.isDigit(c)) {
+                motActuel.append(c);
+            } else {
+                if (motActuel.length() > 0) {
+                    mots.add(motActuel.toString());
+                    motActuel.setLength(0);
                 }
             }
         }
-
-        // Créer une liste de mots triés en parcourant l'alphabet et concaténant les listes de mots
-        StringBuilder phraseTrie = new StringBuilder();
-        for (char lettre : alphabet) {
-            List<String> motsDeLaLettre = motsParLettre.get(lettre);
-            for (String mot : motsDeLaLettre) {
-                phraseTrie.append(mot).append(" ");
-            }
+        if (motActuel.length() > 0) {
+            mots.add(motActuel.toString());
         }
 
-        return phraseTrie.toString().trim();
+        mots.sort((a, b) -> {
+            char premiereLettreA = Character.toLowerCase(a.charAt(0));
+            char premiereLettreB = Character.toLowerCase(b.charAt(0));
+
+            int orderA = orderMap.getOrDefault(premiereLettreA, Integer.MAX_VALUE);
+            int orderB = orderMap.getOrDefault(premiereLettreB, Integer.MAX_VALUE);
+
+            if (orderA == orderB) {
+                return a.compareToIgnoreCase(b);
+            }
+            return Integer.compare(orderA, orderB);
+        });
+
+        return mots;
     }
 }
