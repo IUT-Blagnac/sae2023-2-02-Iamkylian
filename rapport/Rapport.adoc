@@ -557,10 +557,92 @@ Le code utilise une structure de données appropriée pour stocker l'ordre des c
 
 === Simplicité
 
+
+==== Meilleur
+
+|=========================================================================================================
+| Num Algo | Lisibilité | Qualité | Maintenabilité | Note | Classement Final
+
+| 6 | - | Qualité non determinable du fait que ça soit un zip | - | - | HORS CONCOURS NE COMPILE PAS 
+
+| 54 | 8 | 7 | 8 | 23/30 +
+=> ~16/20 | 1
+
+| 65 | 6 | 4 | 6 | divisé par 2 car ne passe pas les tests => 7/30 +
+=> 5/20 | 2
+
+
+|=========================================================================================================
+
+==== Pire
+
+|=========================================================================================================
+| Num Algo | Lisibilité | Qualité | Maintenabilité | Note | Classement Final
+
+| 29 | 4 | 7 | 3 | 14/30 +
+=> ~10/20 | 1
+
+| 36 | 4 | 4 | 4 | divisé par 2 car ne passe pas les tests => 6/30 +
+=> 4/20 | 2
+
+
+|=========================================================================================================
+
 === Efficacité
+
+==== Meilleur
+
+|=========================================================================================================
+| Num Algo | Efficacité | Qualité | Temps d'exécution | Note | Classement Final
+
+| 20 | 8 | 4 |  8 |  20/30 +
+=> 14/20 | HORS CONCOURS CAR UTILISE QSORT 
+
+| 56 | - | 10 | - | - | HORS CONCOURS CAR NE COMPILE PAS
+
+|=========================================================================================================
+
+==== Pire
+
+|=========================================================================================================
+| Num Algo | Efficacité | Qualité | Temps d'exécution | Note | Classement Final
+
+| 17 | 5 | 4 |  4 |  13/30 +
+=> 9/20 | 1
+
+| 68 | - | 7 | - | - | HORS CONCOURS CAR NE COMPILE PAS
+
+|=========================================================================================================
+
 
 === Sobriété
 
+<<<<<<< HEAD
+==== Meilleur
+
+|=========================================================================================================
+| Num Algo | Sobriété Numérique | Qualité | Consommation Electrique | Note | Classement Final
+
+| 34 | 6 |  7 | 7 | 20/30 +
+=> = 14/20 | 1
+
+| 57 | - | - | - | - | HORS CONCOURS CAR NE COMPILE PAS
+
+|=========================================================================================================
+
+==== Pire
+
+|=========================================================================================================
+| Num Algo | Sobriété Numérique | Qualité | Consommation Electrique | Note | Classement Final
+
+| 20 | 5 |  4 | 6 | 15/30 +
+divisé par 2 car ne passe pas les tests => 8/30 +
+=> =6/20 | 1
+
+| 49 | 1 | 2 | 2 | divisé par 2 car ne passe pas les tests => 3/30 +
+=> 2/20 | 2
+|=========================================================================================================
+=======
 
 == Conclusion
 
@@ -569,3 +651,4 @@ En conclusion, la SAE : __"Exploitation algorithmique d'un problème"__ nous a p
 En outre, ce projet nous a permis de développer notre esprit critique dans le domaine de l'algorithme. Nous avons appris à remettre en question et à évaluer de manière critique les choix algorithmiques, en cherchant constamment à améliorer nos solutions. Cela nous a donné une meilleure compréhension des compromis entre la complexité, l'efficacité et la sobriété numérique dans le développement d'algorithmes. +
 
 En résumé, cette SAE nous a offert l'opportunité de résoudre un problème de classification de mots, d'évaluer et de comparer des algorithmes, tout en développant notre esprit critique dans le domaine de l'algorithme. +
+>>>>>>> cffe7fb9eef143907f346e5373abeb2445629a91
