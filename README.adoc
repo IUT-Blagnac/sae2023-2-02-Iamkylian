@@ -186,9 +186,12 @@ Vous utiliserez le dépôt initial qui vous aura été attribué via classroom p
 [options="header"]
 |==========================================================================
 | #    | lien                                                     | langage  | catégorie  |  Type
-| 1    | link:src/main/java/exercice/Exercice1.java[meilleur java]| Java     | Simplicité | Meilleur
-| 2    | link:src/main/java/exercice/Exercice2.java[pire java]    | Java     | Efficacité | Pire
-| ...  | ...                                                      | ...      | ...      
+| 1    | link:src/main/SimpliciteMeilleur.java[simplicite-meilleur]| Java     | Simplicité | Meilleur
+| 2    | link:src/main/java/exercice/Exercice2.java[simplicite-pire]    | Java     | Simplicité | Pire
+| 3    | link:src/main/java/exercice/Exercice2.java[efficacite-meilleur]    | Java     | Efficacité | Meilleur
+| 4    | link:src/main/java/exercice/Exercice2.java[efficacite-pire]    | Java     | Efficacité | Pire
+| 5    | link:src/main/java/exercice/Exercice2.java[sobriete-meilleur]    | Java     | Sobriété | Meilleur
+| 6    | link:src/main/java/exercice/Exercice2.java[sobriete-pire]    | Java     | Sobriété | Pire  
 |==========================================================================
 
 === Phase 2 (deadline : **vendredi 16 juin 2023** à minuit)
