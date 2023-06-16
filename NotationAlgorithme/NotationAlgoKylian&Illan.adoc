@@ -38,7 +38,8 @@
 + Non respect de la nomenclature précise
 + Fonctionne mais ne passe pas les tests fournis initialement   
 
-| 5/20           |  20-efficacite-pire.java  | Ne fonctionne pas (retour eronné, ou pas du bon type attendu)   + 
+| 4/20 et Hors concours          |  20-efficacite-pire.java  | Ne fonctionne pas (retour eronné, ou pas du bon type attendu)   + 
+Non respect de la consigne sur les méhodes de java.util (pour efficacité) +
 + `Suspicion d'utilisation de ChatGPT`  
 
 | 9.5/20           | 22-Efficacite-Meilleur.java | Ne correspond pas à une classe Exercice (cas des main ou des zip) + 

@@ -281,7 +281,7 @@ divisé par 2 car ne passe pas les tests => 8.5/30 +
 `Algorithme Efficacité - Meilleur N°22 :` +
 
 * *Efficacité :* 
-** _Justification_ : L'efficacité du programme dépend principalement de l'implémentation de la méthode sortWords qui effectue le tri des mots. La complexité actuelle de l'algorithme de tri est `*O(n^2)*`, ce qui implqiue que c'est un algorithme dont le temps d'exécution augmente quadratiquement avec la taille de l'entrée n.
+** _Justification_ : L'efficacité du programme dépend principalement de l'implémentation de la méthode sortWords qui effectue le tri des mots. La complexité actuelle de l'algorithme de tri est #O(n^2)#, ce qui implqiue que c'est un algorithme dont le temps d'exécution augmente quadratiquement avec la taille de l'entrée n.
 ** _Exemple_ : Dans l'état actuel du code, l'algorithme de tri utilise une approche de comparaison caractère par caractère, ce qui peut entraîner des performances moins optimales pour de grandes listes de mots.
 
 * *Qualité :* 
@@ -318,8 +318,8 @@ Justification : Le code parcourt chaque caractère du texte une seule fois pour 
 Justification : Le tri des mots se fait en utilisant une méthode de comparaison caractère par caractère. Dans le pire des cas, cela nécessite une comparaison de chaque caractère de chaque paire de mots, ce qui conduit à une complexité quadratique. +
  +
 
-En combinant ces parties, la complexité globale du programme est estimée à #O(m + n^2 * k)#, où m est la longueur du texte, n est le nombre de mots et k est la longueur moyenne des mots. Cette estimation est approximative et peut varier en fonction de la taille réelle du texte, du nombre de mots et de la longueur des mots. #O(m + n^2 * k)# a une complexité trés élevée, car elle dépend non seulement de n^2, mais aussi de m et k. Cela signifie que le temps d'exécution peut augmenter de façon significative en fonction de ces paramètres supplémentaires. Si m, n et k sont tous relativement grands, alors cette complexité peut être très inefficace.
-** _Exemple_ : 
+En combinant ces parties, la complexité globale du programme est estimée à #O(m + n^2 * k)#, où m est la longueur du texte, n est le nombre de mots et k est la longueur moyenne des mots. Cette estimation est approximative et peut varier en fonction de la taille réelle du texte, du nombre de mots et de la longueur des mots. O(m + n^2 * k) a une complexité trés élevée, car elle dépend non seulement de n^2, mais aussi de m et k. Cela signifie que le temps d'exécution peut augmenter de façon significative en fonction de ces paramètres supplémentaires. Si m, n et k sont tous relativement grands, alors cette complexité peut être très inefficace. +
+Donc C(n) = m + n^2 * k donc de maniére plus général #O(n^2)#.
 
 * *Qualité :* 
 ** _Justification_ : Il est bien structuré et facile à lire grâce à une indentation correcte et à des noms de variables et de fonctions significatifs. De plus, il utilise des listes pour stocker les caractères et les chaînes de caractères, ce qui est une approche appropriée pour résoudre le problème. +
@@ -327,7 +327,7 @@ Cependant, l'absence de commentaires Javadoc peut rendre le code moins compréhe
 `Codacy` n'a pas remarquer de quelconque proléme avec ce code.
 
 * *Temps d'exécution :* 
-** _Justification_ : Les temps d’exécution analysés via le programme `TestTempsExecution.java` (en milli-secondes) semblent être inconstants et dépendent surtout du nombre et du placement des espaces contenus dans les chaînes de caractère données. Cependant on remarque que le programme met beaucoup de temps pour 1 caractére mais beacoup moins de temps que la moyenne pour 1000 caractéres.
+** _Justification_ : Les temps d’exécution analysés via le programme `TestTempsExecution.java` (en milli-secondes) semblent être inconstants et dépendent surtout du nombre et du placement des espaces contenus dans les chaînes de caractère données. Cependant on remarque que le programme met beaucoup de temps pour 1 caractére mais beaucoup moins de temps que la moyenne pour 1000 caractéres.
 
 |===
 |*Tailles des chaînes (avec espace)*|*Temps d'exécution*
@@ -342,52 +342,55 @@ Cependant, l'absence de commentaires Javadoc peut rendre le code moins compréhe
 |=========================================================================================================
 | Num Algo | Efficacité | Qualité | Temps d'exécution | Note | Classement Final
 
-| 7 |  | |   | ?/20 | 1
+| 7 | 9 | 7 |  9 | 25/30 +
+divisé par 2 car ne passe pas les tests et ne réalise pas en aucun cas ce qui est demandé lors de cette SAE => 12.5/30 +
+=> `≈8.3/20` | #*1*#
 
-| 20 |  | |   | ?/20 | 1
+| 20 | 7 | 8 |  9 | 24/30 +
+=> =16/20 | 2
 
 |=========================================================================================================
 
 `Algorithme Efficacité - Pire N°7 :` +
 
 * *Efficacité :* 
-** _Justification_ : Complexité (O(n)...)
-** _Exemple_ : 
+** _Justification_ : Complexité #(O(n))#
+** _Exemple_ : La complexité de ce code dépend principalement de la taille de la chaîne de caractères donnée. Lorsque la chaîne de caractères est parcourue pour effectuer les opérations nécessaires, la complexité est linéaire, c'est-à-dire O(n), où n est la taille de la chaîne de caractères. Cela signifie que le temps d'exécution augmente proportionnellement avec la taille de la chaîne.
 
 * *Qualité :* 
-** _Justification_ : 
-** _Exemple_ : 
+** _Justification_ : Le code est structuré de manière claire et lisible. Les noms des variables et des méthodes sont descriptifs, ce qui facilite la compréhension du code. De plus, le code utilise des listes pour stocker les caractères et les chaînes de caractères, ce qui est une approche appropriée pour résoudre le problème.
+** _Exemple_ : Les nom de variable tels que : `ordre` et `result` sont descriptives.
 
 * *Temps d'exécution :* 
-** _Justification_ : 
+** _Justification_ : Les temps d’exécution analysés via le programme `TestTempsExecution.java` (en milli-secondes) semblent dépendre surtout du nombre et du placement des espaces contenus dans les chaînes de caractère données. Le temps d'éxecution est proportionnel a la taille de la liste.
 
 |===
 |*Tailles des chaînes (avec espace)*|*Temps d'exécution*
-|1 caractères|~0.6329 ms
-|10 caractères|~0.0429 ms
-|100 caractères|~0.1554 ms
-|1000 caractères|~3.3582 ms
+|1 caractères|~0.4259 ms
+|10 caractères|~0.3793 ms
+|100 caractères|~2.3706 ms
+|1000 caractères|~12.1586 ms
 |===
 
 `Algorithme Efficacité - Pire N°20 :` +
 
 * *Efficacité :* 
-** _Justification_ : Complexité (O(n)...)
-** _Exemple_ : 
+** _Justification_ : Le code utilise un tri à bulles pour trier les mots dans les listes. La complexité du tri à bulles est de O(n^2), où n est le nombre total de mots à trier. De plus, il y a une boucle imbriquée qui parcourt tous les mots et compare les caractères selon l'ordre spécifié. Cela ajoute une complexité supplémentaire de O(m), où m est la longueur maximale d'un mot. Par conséquent, la complexité globale du code est de O(n^2 * m), et de maniére général #O(n^2)#, ce qui peut être inefficace pour des entrées de grande taille.
+** _Exemple_ : Le code utilise un tri à bulles pour trier les mots selon l'ordre spécifié. Cela implique une comparaison répétée des caractères des mots, ce qui peut entraîner des temps d'exécution plus longs pour des entrées avec de nombreux mots ou des mots de longueur importante.
 
 * *Qualité :* 
-** _Justification_ : 
-** _Exemple_ : 
+** _Justification_ : Le code utilise des noms de variables et de méthodes descriptifs qui facilitent la compréhension du code. Par exemple, les variables `splited`, `result`, `tab`, `notfound` ont des noms qui indiquent leur rôle et leur contenu. De plus, les méthodes `solution` et `compare` ont des noms qui reflètent leur fonction dans le contexte du problème. Cependant `Codacy` a detecté : Trop  de caractére sur une même ligne.
+** _Exemple_ : En utilisant des noms de variables et de méthodes descriptifs, il devient plus facile de comprendre le but et la logique du code. Par exemple, la variable `splited` indique qu'elle contient les mots découpés à partir de la chaîne de caractères donnée. De même, la méthode `compare` suggère qu'elle est utilisée pour comparer deux mots selon l'ordre spécifié. Cela améliore la lisibilité du code et facilite la maintenance à long terme.
 
 * *Temps d'exécution :* 
-** _Justification_ : 
+** _Justification_ : Les temps d'exécution mesurés à l'aide du programme `TestTempsExecution.java` en millisecondes semblent varier et dépendent principalement du nombre et de l'emplacement des espaces présents dans les chaînes de caractères données.
 
 |===
 |*Tailles des chaînes (avec espace)*|*Temps d'exécution*
-|1 caractères|~0.6329 ms
-|10 caractères|~0.0429 ms
-|100 caractères|~0.1554 ms
-|1000 caractères|~3.3582 ms
+|1 caractères|~3.8645 ms
+|10 caractères|~0.1122 ms
+|100 caractères|~0.1556 ms
+|1000 caractères|~1.8684 ms
 |===
 
 === Sobriété
