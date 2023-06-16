@@ -49,9 +49,9 @@ En cas d'ex-aequo, même note. (5/5/3/2 par exemple).
 
 {empty}
 
-== Test supplémentaire
+== Tests supplémentaires
 
-[SOURCE, java]
+[source, java]
 ----
 
 // Chaine donnée en exemple
@@ -61,7 +61,7 @@ assertEquals(List.of("fait", "Il", "aujourd", "aout", "beau", "comme", "hui", "e
 // Chaine donnée avec ordre différent
 assertEquals(List.of("fait", "Il", "aujourd", "aout", "beau", "comme", "hui", "en"),
 	exercice.Exercice.solution("Il fait beau aout comme aujourd'hui en", List.of('f', 'I', 'z', 'u', 'k', 'a', 'b', 'o')));
-    
+
 ----
 
 
@@ -85,7 +85,7 @@ Une code lisible facilite la compréhension, la maintenance et la collaboration 
 [.text-justify]
 Les tests sont des procédures d'évaluation systématiques qui vérifient le bon fonctionnement d'un code. Les tests peuvent être automatisés ou manuels et visent à détecter les erreurs, les bogues et les comportements indésirables. +
 Une bonne couverture de test garantit une meilleure fiabilité du code et facilite la maintenance continue en identifiant rapidement les problèmes potentiels. +
-La qualité du code peut être évaluée à l'aide d'outils open source tels que `SonarLint` sous VsCode.il effectue des analyses statiques du code pour détecter les erreurs, les problèmes de style et les vulnérabilités de sécurité. +
+La qualité du code peut être évaluée à l'aide d'outils open source tels que `SonarLint` sous VsCode.il effectue des analyses statiques du code pour détecter les erreurs, les problèmes de style et les vulnérabilités de sécurité. Nous avons également utilisé `Codacy` pour évaluer la qualité du code. Codacy est une plateforme d'analyse de code qui fournit des informations détaillées sur la qualité et la maintenabilité du code source.
 Ils fournissent des mesures de qualité basées sur des normes et des bonnes pratiques de développement logiciel, permettant aux développeurs d'améliorer la qualité de leur code.
 
 === Efficacité
@@ -93,14 +93,14 @@ Ils fournissent des mesures de qualité basées sur des normes et des bonnes pra
 [.text-justify]
 L'analyse de l'efficacité évalue les performances d'un code en termes de ressources utilisées, telles que le temps et l'espace. Elle implique l'évaluation de la complexité algorithmique, qui mesure comment le temps d'exécution et les ressources augmentent avec la taille de l'entrée. + 
 La complexité se réfère à l'analyse de la performance d'un algorithme en fonction de la taille de l'entrée. Elle est souvent exprimée en notation Big O et permet d'estimer la quantité de ressources (temps, espace) nécessaires pour résoudre un problème. +
-Une complexité réduite, telle que O(n) ou O(log(n)), indique une meilleure efficacité, tandis qu'une complexité plus élevée, telle que O(n^2) ou O(2^n), peut entraîner des problèmes de performance. +
-Une analyse approfondie de l'efficacité permet d'identifier les parties du code qui peuvent être optimisées pour améliorer les performances globales.
+Une complexité réduite, telle que O(n) ou O(log(n)), indique une meilleure efficacité, tandis qu'une complexité plus élevée, telle que O(n^2^) ou O(2^n^), peut entraîner des problèmes de performance. +
+Une analyse approfondie de l'efficacité permet d'identifier les parties du code qui peuvent être optimisées pour améliorer les performances globales. A savoir qu'une complexité plus faible indique une meilleure efficacité. 
 
 === Sobriété numérique
 
 [.text-justify]
 La sobriété numérique concerne la consommation de ressources d'un code, y compris la consommation d'énergie. Un code sobre est optimisé pour utiliser efficacement les ressources disponibles, minimisant ainsi la consommation de ressources telles que le temps de calcul, la mémoire ou l'énergie. L'objectif est d'écrire un code qui accomplisse la tâche souhaitée en utilisant le moins de ressources possible. +
-Nous allons utiliser des outils tels que `Joular` peuvent mesurer la consommation en ressources d'un algorithme et aider à identifier les parties du code qui consomment beaucoup de ressources. Cet outil nous permet donc de mesurer la sobriété d’un code.
+Nous allons utiliser des outils tels que `Joular` qui peut mesurer la consommation en ressources d'un algorithme et aider à identifier les parties du code qui consomment beaucoup de ressources. Cet outil nous permet donc de mesurer la sobriété d’un code.
 
 === Temps d'exécution
 
@@ -131,21 +131,22 @@ Pour mener à bien cette évaluation, plusieurs outils ont été utilisés :
 [.text-justify]
 * *Codacy :* Cet outil open source a été utilisé pour mesurer la qualité du code des différentes solutions. Il fournit des informations sur la maintenabilité, la lisibilité et les bonnes pratiques de codage.
 
-* *Joular :* Cet outil a été utilisé pour évaluer la consommation en ressources des algorithmes, en se concentrant notamment sur la consommation énergétique.
+* *JoularJX :* Cet outil a été utilisé pour évaluer la consommation en ressources des algorithmes, en se concentrant notamment sur la consommation énergétique.
 
-* *TempsExecution.java :* Ce programme que nous avons développé nous a été utile pour tester les temps d'éxecutions des algorithmes. Cet outil a permis de mesurer le temps d'exécution des différents algorithmes, en fournissant des données précises sur les performances de chaque solution.
+* *Sonarlint :* SonarLint est une extension pour `Visual Studio Code` qui permet de détecter les points à améliorer dans le code source. Dans notre cas, nous l'avons utilisé pour analyser notre code et identifier les problèmes potentiels. Cependant, par inadvertance, nous avons supprimé deux points signalés par SonarLint. Afin de garantir la qualité de l'information fournie, nous avons vérifié les résultats obtenus à chaque étape et ajusté la note en conséquence.
 
-* *TestConsoElectrique.java :*
+
+* *TestConsoElecEtTempsExec.java :* Ce programme que nous avons développé nous a été utile pour tester les temps d'éxecutions des algorithmes. Cet outil a permis de mesurer le temps d'exécution des différents algorithmes, en fournissant des données précises sur les performances de chaque solution.
 
 == Prérequis
 [.text-justify]
-Vérifier la présence du fichier ``.java`` que vous souhaité analyser dans le répertoire ``~/src/analyse/CodeEvaluation``. +
+Vérifier la présence du fichier ``.java`` que vous souhaité analyser dans le répertoire ``~/src/analyse/CodeEvaluation/Kylian/`` ou ``~/src/analyse/CodeEvaluation/Illan/``. +
  +
 
 [.text-justify]
 Remplacer la ligne n°7 du fichier ``EraserTest.java`` du répertoire ``~/src/test/java`` par le code suivant : +
 
-[SOURCE, java]
+[source, java]
 ----
 import analyse.CodeEvaluation.nomfichier.java;
 ----
@@ -494,7 +495,6 @@ divisé par 2 car ne passe pas les tests => 12/30 +
 
 | 22 | 8 | 10 | 10 | 28/30 +
 => `≈18.6/20 | 2
-é
 |=========================================================================================================
 
 `Algorithme Sobriété - Pire N°5 :` +
@@ -617,6 +617,7 @@ Le code utilise une structure de données appropriée pour stocker l'ordre des c
 
 === Sobriété
 
+<<<<<<< HEAD
 ==== Meilleur
 
 |=========================================================================================================
@@ -641,3 +642,13 @@ divisé par 2 car ne passe pas les tests => 8/30 +
 | 49 | 1 | 2 | 2 | divisé par 2 car ne passe pas les tests => 3/30 +
 => 2/20 | 2
 |=========================================================================================================
+=======
+
+== Conclusion
+
+En conclusion, la SAE : __"Exploitation algorithmique d'un problème"__ nous a permis de résoudre un problème de classification de mots dans un texte tout en respectant les contraintes de conception d'algorithme. Grâce à ce projet, nous avons acquis la capacité d'évaluer des algorithmes simples et de les comparer entre eux afin de les classer. Cela implique une compréhension des différentes solutions proposées, une analyse de leur simplicité, de leur efficacité et de leur efficience numérique. +
+
+En outre, ce projet nous a permis de développer notre esprit critique dans le domaine de l'algorithme. Nous avons appris à remettre en question et à évaluer de manière critique les choix algorithmiques, en cherchant constamment à améliorer nos solutions. Cela nous a donné une meilleure compréhension des compromis entre la complexité, l'efficacité et la sobriété numérique dans le développement d'algorithmes. +
+
+En résumé, cette SAE nous a offert l'opportunité de résoudre un problème de classification de mots, d'évaluer et de comparer des algorithmes, tout en développant notre esprit critique dans le domaine de l'algorithme. +
+>>>>>>> cffe7fb9eef143907f346e5373abeb2445629a91

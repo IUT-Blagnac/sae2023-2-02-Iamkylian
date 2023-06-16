@@ -186,9 +186,12 @@ Vous utiliserez le dépôt initial qui vous aura été attribué via classroom p
 [options="header"]
 |==========================================================================
 | #    | lien                                                     | langage  | catégorie  |  Type
-| 1    | link:src/main/java/exercice/Exercice1.java[meilleur java]| Java     | Simplicité | Meilleur
-| 2    | link:src/main/java/exercice/Exercice2.java[pire java]    | Java     | Efficacité | Pire
-| ...  | ...                                                      | ...      | ...      
+| 1    | link:Phase1/src/main/SimpliciteMeilleur.java[simplicite-meilleur]| Java     | Simplicité | Meilleur
+| 2    | link:Phase1/src/main/SimplicitePire.java[simplicite-pire]    | Java     | Simplicité | Pire
+| 3    | link:Phase1/src/main/EfficaciteMeilleur.java[efficacite-meilleur]    | Java     | Efficacité | Meilleur
+| 4    | link:Phase1/src/main/EfficacitePire.java[efficacite-pire]    | Java     | Efficacité | Pire
+| 5    | link:Phase1/src/main/SobrieteMeilleur.java[sobriete-meilleur]    | Java     | Sobriété | Meilleur
+| 6    | link:Phase1/src/main/SobrietePire.java[sobriete-pire]    | Java     | Sobriété | Pire  
 |==========================================================================
 
 === Phase 2 (deadline : **vendredi 16 juin 2023** à minuit)
@@ -218,6 +221,7 @@ Voici les pré-requis pour exécuter nos codes d'évaluation.
 - link:https://www.noureddine.org/research/joular[Joular]
 - link:Phase2/src/test/TestConsoElecEtTempsExec.java[Notre outil de mesure du temps d'éxécution, et de la consommation électrique]
 - link:https://www.codacy.com/[Codacy]
+- link:https://marketplace.visualstudio.com/items?itemName=SonarSource.sonarlint-vscode[SonarLint]
 
 == Généralités, notation de la SAÉ et résultat du concours
 
