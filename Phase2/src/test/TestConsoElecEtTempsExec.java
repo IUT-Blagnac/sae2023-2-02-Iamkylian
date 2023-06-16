@@ -6,7 +6,7 @@ import java.util.List;
 import exercice.Exercice;
 import exercice.Exercice1;
 
-public class TestConsoElectrique {
+public class TestConsoElecEtTempsExec {
 
 	public static void main(String[] args) {
 

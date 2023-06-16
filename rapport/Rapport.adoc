@@ -100,6 +100,10 @@ Une bonne maintenabilité permet de minimiser les coûts de maintenance et de ga
 
 === Consomation électrique
 
+[.text-justify]
+La consommation électrique est la quantité d'énergie électrique consommée par un code. Elle est mesurée en watts (W) et peut être calculée en multipliant la puissance électrique par le temps d'exécution. +
+La consommation électrique est un facteur important à prendre en compte lors de la conception d'un code, car elle peut avoir un impact sur la durée de vie de la batterie de l'appareil, ainsi qu'une utilisation des ressources de manière inefficace. +
+On va calculer 
 
 == Présentation des outils d'évaluation
 
@@ -472,7 +476,7 @@ divisé par 2 car ne passe pas les tests => 12/30 +
 
 | 22 | 8 | 10 | 10 | 28/30 +
 => `≈18.6/20 | 2
-
+é
 |=========================================================================================================
 
 `Algorithme Sobriété - Pire N°5 :` +
