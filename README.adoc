@@ -53,6 +53,16 @@ Merci à mailto:saadialbane@gmail.com:[Saadia Albane] pour l'idée du problème 
 - [ ] 3
 - [ ] 4
 
+=== Coequipier durant la Phase 2
+
+* LAST NAME : GABARRA
+* First name : Illan
+* TD group : 
+- [x] 1
+- [ ] 2
+- [ ] 3
+- [ ] 4
+
 // == Objectives
 == Objectifs
 
@@ -194,20 +204,20 @@ WARNING: Les répertoires et fichiers existants devront être complétés et mis
 
 Voici les pré-requis pour exécuter nos codes d'évaluation.
 
-- Java v.x.y.z
-- ...
+- Java 19.0.2
 
 === Reproductibilité
 
 - Pour reproduire nos analyses :
-. Installez X
-. Lancez Y
-. ...
+. Télécharger ce link:Phase2/src[dossier]
+. Placez le dans un projet java Eclipse en remplaçant le dossier src
+. Lancez le programme avec Junit
 
 === Références
 
-- link:http://xyz[Mon super outil XYZ]
-- ...
+- link:https://www.noureddine.org/research/joular[Joular]
+- link:Phase2/src/test/TestTempsExecution.java[Notre outil de mesure du temps d'éxécution]
+- link:Phase2/src/test/TestConsoElectrique.java[Notre outil de mesure de la consommation électrique]
 
 == Généralités, notation de la SAÉ et résultat du concours
 
