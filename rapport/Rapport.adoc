@@ -49,6 +49,23 @@ En cas d'ex-aequo, même note. (5/5/3/2 par exemple).
 
 {empty}
 
+== Test supplémentaire
+
+[SOURCE, java]
+----
+
+// Chaine donnée en exemple
+assertEquals(List.of("fait", "Il", "aujourd", "aout", "beau", "comme", "hui", "en"),
+    exercice.Exercice.solution("Il fait beau comme aujourd'hui en aout", List.of('f', 'I', 'z', 'u', 'k', 'a', 'b', 'o')));
+
+// Chaine donnée avec ordre différent
+assertEquals(List.of("fait", "Il", "aujourd", "aout", "beau", "comme", "hui", "en"),
+	exercice.Exercice.solution("Il fait beau aout comme aujourd'hui en", List.of('f', 'I', 'z', 'u', 'k', 'a', 'b', 'o')));
+    
+----
+
+
+
 == Présentation des critères de comparaison
 
 [.text-justify]
