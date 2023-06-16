@@ -26,7 +26,7 @@ La SAE "Exploitation algorithmique d'un problème" comporte deux phases. Dans la
 Dans la deuxième phase du concours, nous travaillons en binôme pour comparer et évaluer les différentes solutions. Nous devons évaluer plusieurs solutions en fonction de critères tels que la lisibilité du code, la qualité du code, l'efficacité, la sobriété numérique et le temps d'exécution, mais nous sommes libres de choisir d'autre critére à condition qu'ils soit pertinents. Nous devons justifier nos analyses et classer les solutions en conséquence. +
 
 [.text-justify]
-Ce concours d'algorithmes nous permet de mettre en pratique nos compétences en programmation, en résolution de problèmes ainsi qu'en analyse __algorithmique__. +
+Ce concours d'algorithmes nous permet de mettre en pratique nos compétences en programmation, en résolution de problèmes ainsi qu'en analyse algorithmique. +
 
 == Présentation des critères de notation des algorithmes
 
@@ -51,7 +51,7 @@ En cas d'ex-aequo, même note. (5/5/3/2 par exemple).
 
 == Test supplémentaire
 
-[SOURCE, java]
+[source, java]
 ----
 
 // Chaine donnée en exemple
