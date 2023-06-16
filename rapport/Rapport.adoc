@@ -409,12 +409,17 @@ divisé par 2 car ne passe pas les tests et ne réalise pas en aucun cas ce qui 
 `Algorithme Sobriété - Meilleur N°36 :` +
 
 * *Sobriété Numérique :* 
-** _Justification_ : Complexité (O(n)...)
-** _Exemple_ : 
+** _Justification_ : L'algorithme a une complexité linéaire O(n), ce qui signifie que le temps d'exécution augmente de manière linéaire avec la taille de l'entrée. +
+Cela indique une efficacité raisonnable et une consommation de ressources relativement stable, sans dépendance excessive à la taille de l'entrée.
+** _Exemple_ : L'algorithme traite chaque caractère de la chaîne de caractères une seule fois, en les ajoutant aux mots appropriés. La complexité linéaire garantit une consommation de ressources proportionnelle à la taille de la chaîne de caractères donnée.
+{emplty} +
+** _Bonne pratique_ : L'utilisation de la méthode `sort` avec un comparateur personnalisé pour trier les mots selon l'ordre spécifié est une bonne pratique. Cela permet d'obtenir un résultat trié de manière efficace sans avoir à mettre en place un algorithme de tri personnalisé.
+** _Point d'amélioration_ : Optimiser la manière dont les mots sont extraits de la chaîne de caractères. Actuellement, chaque caractère est vérifié individuellement pour déterminer s'il fait partie d'un mot. +
+Cela pourrait être optimisé en utilisant des techniques telles que des expressions régulières ou des bibliothèques de traitement de texte pour une extraction plus rapide des mots. Cela pourrait potentiellement réduire le temps d'exécution pour les chaînes de caractères plus grandes ou complexes. 
 
 * *Qualité :* 
-** _Justification_ : 
-** _Exemple_ : 
+** _Justification_ : L'algorithme utilise des structures de données appropriées, telles que des listes, pour stocker les mots et les caractères. Les noms des variables et des méthodes sont descriptifs, facilitant ainsi la compréhension du code. L'utilisation de la méthode sort avec un comparateur permet de trier efficacement les mots selon l'ordre spécifié. Cependant `Codacy` a detecté : Trop  de caractére sur une même ligne.
+** _Exemple_ : Les variables sont nommées de manière significative, telles que `mots`, `motCourant`, `ordre`, ce qui aide à comprendre leur rôle dans l'algorithme. De plus, la méthode `solution` et la méthode `getOrderValue` sont clairement définies, compréhensible et leur objectif est compréhensible.
 
 * *Consommation Electrique :* 
 ** _Justification_ : 
@@ -425,6 +430,9 @@ divisé par 2 car ne passe pas les tests et ne réalise pas en aucun cas ce qui 
 * *Sobriété Numérique :* 
 ** _Justification_ : Complexité (O(n)...)
 ** _Exemple_ : 
+{emplty} +
+** _Bonne pratique_ :
+** _Point d'amélioration_ :
 
 * *Qualité :* 
 ** _Justification_ : 
@@ -450,6 +458,9 @@ divisé par 2 car ne passe pas les tests et ne réalise pas en aucun cas ce qui 
 * *Sobriété Numérique :* 
 ** _Justification_ : Complexité (O(n)...)
 ** _Exemple_ : 
+{emplty} +
+** _Bonne pratique_ :
+** _Point d'amélioration_ :
 
 * *Qualité :* 
 ** _Justification_ : 
@@ -464,6 +475,9 @@ divisé par 2 car ne passe pas les tests et ne réalise pas en aucun cas ce qui 
 * *Sobriété Numérique :* 
 ** _Justification_ : Complexité (O(n)...)
 ** _Exemple_ : 
+{emplty} +
+** _Bonne pratique_ :
+** _Point d'amélioration_ :
 
 * *Qualité :* 
 ** _Justification_ : 
