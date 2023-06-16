@@ -214,7 +214,8 @@ Voici les pré-requis pour exécuter nos codes d'évaluation.
 - Pour reproduire nos analyses :
 . Télécharger ce link:Phase2/src[dossier]
 . Placez le dans un projet java Eclipse en remplaçant le dossier src
-. Lancez le programme avec Junit
+. Récuperer le code que vous souhieter analyser/tester dans ce link:CodeEvaluation/Illan[dossier] pour les code évaluer par Illan GABARRA et dans link:CodeEvaluation/Kylian[celui-ci] pour les codes évalué par Kylian GACHET.
+. Lancez le programme de test avec Junit=
 
 === Références
 
