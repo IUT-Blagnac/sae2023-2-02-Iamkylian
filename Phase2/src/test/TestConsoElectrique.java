@@ -4,6 +4,7 @@ import java.util.Arrays;
 import java.util.List;
 
 import exercice.Exercice;
+import exercice.Exercice1;
 
 public class TestConsoElectrique {
 
@@ -23,7 +24,7 @@ public class TestConsoElectrique {
 
 		for (String str : testStrings) {
 			long startTime = System.nanoTime();
-			List<String> result = Exercice.solution(str, ordre);
+			List<String> result = Exercice1.solution(str, ordre);
 			long endTime = System.nanoTime();
 			long executionTime = endTime - startTime;
 			double tempsExecutionMillis = (double) executionTime / 1_000_000; // Conversion en millisecondes

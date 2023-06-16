@@ -1,44 +1,30 @@
 package exercice;
 
 import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
+import java.util.Arrays;
 import java.util.List;
 
 public class Exercice {
     public static List<String> solution(String str, List<Character> ordre) {
-        List<String> motsClasses = new ArrayList<>();
-        StringBuilder motCourant = new StringBuilder();
+        List<String> words = Arrays.asList(str.split("[^a-zA-Z0-9]"));
+        List<String> sortedWords = new ArrayList<>();
 
-        for (int i = 0; i < str.length(); i++) {
-            char c = str.charAt(i);
-
-            if (Character.isLetterOrDigit(c)) {
-                motCourant.append(c);
-            } else {
-                if (motCourant.length() > 0) {
-                    motsClasses.add(motCourant.toString());
-                    motCourant.setLength(0);
+        for (char c : ordre) {
+            for (String word : words) {
+                if (!sortedWords.contains(word) && word.charAt(0) == c) {
+                    sortedWords.add(word);
                 }
             }
         }
 
-        if (motCourant.length() > 0) {
-            motsClasses.add(motCourant.toString());
-        }
+        for (String word : words) {
 
-        Comparator<String> ordreComparator = Comparator.comparingInt(s -> getIndex(s.charAt(0), ordre));
-        Collections.sort(motsClasses, ordreComparator);
-
-        return motsClasses;
-    }
-
-    private static int getIndex(char c, List<Character> ordre) {
-        for (int i = 0; i < ordre.size(); i++) {
-            if (ordre.get(i) == c) {
-                return i;
+            if (!sortedWords.contains(word)) {
+                sortedWords.add(word);
             }
         }
-        return ordre.size();
+
+        return sortedWords;
     }
+
 }

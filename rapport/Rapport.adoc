@@ -280,6 +280,7 @@ divisé par 2 car ne passe pas les tests => 8.5/30 +
 
 `Algorithme Efficacité - Meilleur N°22 :` +
 
+[.text-justify]
 * *Efficacité :* 
 ** _Justification_ : L'efficacité du programme dépend principalement de l'implémentation de la méthode sortWords qui effectue le tri des mots. La complexité actuelle de l'algorithme de tri est #O(n^2)#, ce qui implqiue que c'est un algorithme dont le temps d'exécution augmente quadratiquement avec la taille de l'entrée n.
 ** _Exemple_ : Dans l'état actuel du code, l'algorithme de tri utilise une approche de comparaison caractère par caractère, ce qui peut entraîner des performances moins optimales pour de grandes listes de mots.
@@ -302,6 +303,7 @@ divisé par 2 car ne passe pas les tests => 8.5/30 +
 
 `Algorithme Efficacité - Meilleur N°57 :` +
 
+[.text-justify]
 * *Efficacité :* 
 ** _Justification_ : 
 
@@ -353,6 +355,7 @@ divisé par 2 car ne passe pas les tests et ne réalise pas en aucun cas ce qui 
 
 `Algorithme Efficacité - Pire N°7 :` +
 
+[.text-justify]
 * *Efficacité :* 
 ** _Justification_ : Complexité #(O(n))#
 ** _Exemple_ : La complexité de ce code dépend principalement de la taille de la chaîne de caractères donnée. Lorsque la chaîne de caractères est parcourue pour effectuer les opérations nécessaires, la complexité est linéaire, c'est-à-dire O(n), où n est la taille de la chaîne de caractères. Cela signifie que le temps d'exécution augmente proportionnellement avec la taille de la chaîne.
@@ -374,6 +377,7 @@ divisé par 2 car ne passe pas les tests et ne réalise pas en aucun cas ce qui 
 
 `Algorithme Efficacité - Pire N°20 :` +
 
+[.text-justify]
 * *Efficacité :* 
 ** _Justification_ : Le code utilise un tri à bulles pour trier les mots dans les listes. La complexité du tri à bulles est de O(n^2), où n est le nombre total de mots à trier. De plus, il y a une boucle imbriquée qui parcourt tous les mots et compare les caractères selon l'ordre spécifié. Cela ajoute une complexité supplémentaire de O(m), où m est la longueur maximale d'un mot. Par conséquent, la complexité globale du code est de O(n^2 * m), et de maniére général #O(n^2)#, ce qui peut être inefficace pour des entrées de grande taille.
 ** _Exemple_ : Le code utilise un tri à bulles pour trier les mots selon l'ordre spécifié. Cela implique une comparaison répétée des caractères des mots, ce qui peut entraîner des temps d'exécution plus longs pour des entrées avec de nombreux mots ou des mots de longueur importante.
@@ -411,10 +415,11 @@ divisé par 2 car ne passe pas les tests et ne réalise pas en aucun cas ce qui 
 
 `Algorithme Sobriété - Meilleur N°36 :` +
 
+[.text-justify]
 * *Sobriété Numérique :* 
 ** _Justification_ : L'algorithme a une complexité quadratique O(n^2) dans le pire des cas, ce qui signifie que le temps d'exécution augmente de manière quadratique par rapport à la taille de l'entrée. +
 Cependant, cela indique tout de même une efficacité raisonnable et une consommation de ressources relativement stable, sans dépendance excessive à la taille de l'entrée.
-{emplty} +
+{empty} +
 ** _Bonne pratique_ : L'utilisation de la méthode `sort` avec un comparateur personnalisé pour trier les mots selon l'ordre spécifié est une bonne pratique. Cela permet d'obtenir un résultat trié de manière efficace sans avoir à mettre en place un algorithme de tri personnalisé.
 ** _Point d'amélioration_ : Optimiser la manière dont les mots sont extraits de la chaîne de caractères. Actuellement, chaque caractère est vérifié individuellement pour déterminer s'il fait partie d'un mot. +
 Cela pourrait être optimisé en utilisant des techniques telles que des expressions régulières ou des bibliothèques de traitement de texte pour une extraction plus rapide des mots. Cela pourrait potentiellement réduire le temps d'exécution pour les chaînes de caractères plus grandes ou complexes. 
@@ -435,10 +440,11 @@ Cela pourrait être optimisé en utilisant des techniques telles que des express
 
 `Algorithme Sobriété - Meilleur N°58 :` +
 
+[.text-justify]
 * *Sobriété Numérique :* 
 ** _Justification_ : L'algorithme a une complexité quadratique O(n^2) dans le pire des cas, ce qui signifie que le temps d'exécution augmente de manière quadratique par rapport à la taille de l'entrée. +
 Cependant, cela indique tout de même une efficacité raisonnable et une consommation de ressources relativement stable, sans dépendance excessive à la taille de l'entrée.
-{emplty} +
+{empty} +
 ** _Bonne pratique_ : L'utilisation d'une liste pour stocker les mots et d'une boucle linéaire pour les trier selon l'ordre spécifié est une approche simple et compréhensible. + 
 De plus, l'utilisation de la classe StringBuilder pour la construction des mots est plus efficace que l'utilisation de concaténations de chaînes de caractères.
 ** _Point d'amélioration_ : L'algorithme pourrait être optimisé en utilisant une table de hachage (HashMap) pour associer chaque caractère à son indice dans l'ordre spécifié. + 
@@ -470,50 +476,58 @@ Cela éliminerait la recherche linéaire et permettrait d'obtenir l'indice direc
 
 `Algorithme Sobriété - Pire N°5 :` +
 
+[.text-justify]
 * *Sobriété Numérique :* 
-** _Justification_ : Complexité (O(n)...)
-** _Exemple_ : 
-{emplty} +
-** _Bonne pratique_ :
-** _Point d'amélioration_ :
+** _Justification_ : Le code utilise des structures de données appropriées pour stocker les mots, l'ordre des caractères et leur indice respectif dans l'ordre. Il n'y a pas d'utilisation excessive de ressources informatiques, tels que la mémoire ou le temps de calcul, qui pourrait être évitée. +
+Le code effectue des opérations de manière efficace en utilisant des algorithmes adaptés.
+{empty} +
+** _Bonne pratique_ : Le code utilise des boucles et des structures de contrôle appropriées pour parcourir les caractères du texte et trier les mots, sans recourir à des opérations redondantes ou inutiles. +
+Il utilise des structures de données existantes (comme `HashMap` et `ArrayList`) pour stocker les mots, l'ordre des caractères et les résultats intermédiaires.
+** _Point d'amélioration_ : La méthode de tri utilisée (`bogoSort()`) est inefficace et peut avoir une complexité élevée, en particulier pour les textes de grande taille. Une amélioration serait de remplacer cette méthode par un algorithme de tri plus efficace et adapté aux besoins spécifiques de l'application. +
+Le code pourrait bénéficier de commentaires supplémentaires pour expliquer les différentes parties du code, les intentions et les étapes clés de l'algorithme de tri. Cela améliorerait la lisibilité et la compréhension du code pour les développeurs travaillant sur ce projet.
 
 * *Qualité :* 
-** _Justification_ : 
-** _Exemple_ : 
+** _Justification_ : Le programme divise la chaîne de caractères en mots en utilisant une expression régulière et les stocke dans une liste. Ensuite, il parcourt l'ordre spécifié et recherche les mots correspondants dans la liste, les ajoutant à une liste triée. +
+Cependant, l'utilisation de boucles imbriquées peut entraîner une complexité temporelle plus élevée. De plus, l'utilisation de `sortedWords.contains()` à chaque itération pour vérifier si le mot est déjà présent peut également avoir un impact sur les performances. De plus, `Codacy` n'a détecté aucun probléme de qualité.
 
 * *Consommation Electrique :* 
-** _Justification_ : 
+** _Justification_ : Au dela de 10 caractères le programme ne fonctionne pas.
 
 |===
 |*Tailles des chaînes (avec espace)*|*Indice de consommation électrique (en Watt)*
-|1 caractères|~3,52455
-|10 caractères|~5,70018
-|100 caractères|~5,18266
-|1000 caractères|~4,24851
+|1 caractères|~3,59873
+|10 caractères|~5,29385
+|100 caractères| X
+|1000 caractères| X
 |===
 
 `Algorithme Sobriété - Pire N°22 :` +
 
+[.text-justify]
 * *Sobriété Numérique :* 
-** _Justification_ : Complexité (O(n)...)
-** _Exemple_ : 
-{emplty} +
-** _Bonne pratique_ :
-** _Point d'amélioration_ :
+** _Justification_ : Le code est relativement simple et direct, ce qui facilite la compréhension et la maintenance.
+Il utilise les structures de données appropriées pour stocker les mots, l'ordre des caractères et les mots triés. +
+Il sépare les mots en utilisant une expression régulière et les ajoute à une liste.
+{empty} +
+** _Bonne pratique_ : Le code utilise des noms de variables clairs et compréhensibles pour améliorer la lisibilité. +
+Les dépendances nécessaires sont correctement importées et utilisées.
+** _Point d'amélioration_ : L'algorithme de tri peut être amélioré en utilisant des méthodes de tri plus efficaces, telles que le tri par fusion ou le tri rapide, qui offrent des performances meilleures que la boucle imbriquée actuelle. +
+L'utilisation de `Arrays.asList()` peut être remplacée par une autre méthode pour éviter la création d'une liste immuable et permettre des modifications ultérieures si nécessaire. +
+Il pourrait être utile d'ajouter une vérification supplémentaire pour exclure les mots vides ou les caractères spéciaux lors de l'ajout à la liste `sortedWords`.
 
 * *Qualité :* 
-** _Justification_ : 
-** _Exemple_ : 
+** _Justification_ : Ce code implémente une méthode appelée solution qui trie une liste de mots en utilisant un ordre spécifié. Il utilise une approche de tri personnalisée en mélangeant aléatoirement les mots jusqu'à ce qu'ils soient triés. +
+Le code utilise une structure de données appropriée pour stocker l'ordre des caractères et leur indice respectif. Il identifie également correctement les caractères alphabétiques et numériques dans le texte. Cependant, la méthode de tri utilisée peut entraîner des performances inefficaces dans certains cas.
 
 * *Consommation Electrique :* 
-** _Justification_ : 
+** _Justification_ : Au dela de 10 caractères le programme ne fonctionne pas.
 
 |===
 |*Tailles des chaînes (avec espace)*|*Indice de consommation électrique (en Watt)*
-|1 caractères|~3,52455
-|10 caractères|~5,70018
-|100 caractères|~5,18266
-|1000 caractères|~4,24851
+|1 caractères|~4,36620
+|10 caractères|~5,38312
+|100 caractères| X
+|1000 caractères| X
 |===
 
 == Illan Gabarra (1A)
