@@ -140,13 +140,13 @@ Pour mener à bien cette évaluation, plusieurs outils ont été utilisés :
 
 == Prérequis
 [.text-justify]
-Vérifier la présence du fichier ``.java`` que vous souhaité analyser dans le répertoire ``~/src/analyse/CodeEvaluation``. +
+Vérifier la présence du fichier ``.java`` que vous souhaité analyser dans le répertoire ``~/src/analyse/CodeEvaluation/Kylian/`` ou ``~/src/analyse/CodeEvaluation/Illan/``. +
  +
 
 [.text-justify]
 Remplacer la ligne n°7 du fichier ``EraserTest.java`` du répertoire ``~/src/test/java`` par le code suivant : +
 
-[SOURCE, java]
+[source, java]
 ----
 import analyse.CodeEvaluation.nomfichier.java;
 ----
@@ -561,4 +561,11 @@ Le code utilise une structure de données appropriée pour stocker l'ordre des c
 
 === Sobriété
 
-Commen utilise les ressources, les stocke et les calcul qu'il fait (s'il passe en revue toutes la liste alors qu'il y pas besoins alors pas bon), complexité 
+
+== Conclusion
+
+En conclusion, la SAE : __"Exploitation algorithmique d'un problème"__ nous a permis de résoudre un problème de classification de mots dans un texte tout en respectant les contraintes de conception d'algorithme. Grâce à ce projet, nous avons acquis la capacité d'évaluer des algorithmes simples et de les comparer entre eux afin de les classer. Cela implique une compréhension des différentes solutions proposées, une analyse de leur simplicité, de leur efficacité et de leur efficience numérique. +
+
+En outre, ce projet nous a permis de développer notre esprit critique dans le domaine de l'algorithme. Nous avons appris à remettre en question et à évaluer de manière critique les choix algorithmiques, en cherchant constamment à améliorer nos solutions. Cela nous a donné une meilleure compréhension des compromis entre la complexité, l'efficacité et la sobriété numérique dans le développement d'algorithmes. +
+
+En résumé, cette SAE nous a offert l'opportunité de résoudre un problème de classification de mots, d'évaluer et de comparer des algorithmes, tout en développant notre esprit critique dans le domaine de l'algorithme. +
