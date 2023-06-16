@@ -26,7 +26,7 @@ La SAE "Exploitation algorithmique d'un problème" comporte deux phases. Dans la
 Dans la deuxième phase du concours, nous travaillons en binôme pour comparer et évaluer les différentes solutions. Nous devons évaluer plusieurs solutions en fonction de critères tels que la lisibilité du code, la qualité du code, l'efficacité, la sobriété numérique et le temps d'exécution, mais nous sommes libres de choisir d'autre critére à condition qu'ils soit pertinents. Nous devons justifier nos analyses et classer les solutions en conséquence. +
 
 [.text-justify]
-Ce concours d'algorithmes nous permet de mettre en pratique nos compétences en programmation, en résolution de problèmes ainsi qu'en analyse algorithmique. +
+Ce concours d'algorithmes nous permet de mettre en pratique nos compétences en programmation, en résolution de problèmes ainsi qu'en analyse __algorithmique__. +
 
 == Présentation des critères de notation des algorithmes
 
@@ -61,7 +61,7 @@ assertEquals(List.of("fait", "Il", "aujourd", "aout", "beau", "comme", "hui", "e
 // Chaine donnée avec ordre différent
 assertEquals(List.of("fait", "Il", "aujourd", "aout", "beau", "comme", "hui", "en"),
 	exercice.Exercice.solution("Il fait beau aout comme aujourd'hui en", List.of('f', 'I', 'z', 'u', 'k', 'a', 'b', 'o')));
-    
+
 ----
 
 
@@ -131,11 +131,12 @@ Pour mener à bien cette évaluation, plusieurs outils ont été utilisés :
 [.text-justify]
 * *Codacy :* Cet outil open source a été utilisé pour mesurer la qualité du code des différentes solutions. Il fournit des informations sur la maintenabilité, la lisibilité et les bonnes pratiques de codage.
 
-* *Joular :* Cet outil a été utilisé pour évaluer la consommation en ressources des algorithmes, en se concentrant notamment sur la consommation énergétique.
+* *JoularJX :* Cet outil a été utilisé pour évaluer la consommation en ressources des algorithmes, en se concentrant notamment sur la consommation énergétique.
 
-* *TempsExecution.java :* Ce programme que nous avons développé nous a été utile pour tester les temps d'éxecutions des algorithmes. Cet outil a permis de mesurer le temps d'exécution des différents algorithmes, en fournissant des données précises sur les performances de chaque solution.
+* *Sonarlint :* SonarLint est une extension pour `Visual Studio Code` qui permet de détecter les points à améliorer dans le code source. Dans notre cas, nous l'avons utilisé pour analyser notre code et identifier les problèmes potentiels. Cependant, par inadvertance, nous avons supprimé deux points signalés par SonarLint. Afin de garantir la qualité de l'information fournie, nous avons vérifié les résultats obtenus à chaque étape et ajusté la note en conséquence.
 
-* *TestConsoElectrique.java :*
+
+* *TestConsoElecEtTempsExec.java :* Ce programme que nous avons développé nous a été utile pour tester les temps d'éxecutions des algorithmes. Cet outil a permis de mesurer le temps d'exécution des différents algorithmes, en fournissant des données précises sur les performances de chaque solution.
 
 == Prérequis
 [.text-justify]
@@ -494,7 +495,6 @@ divisé par 2 car ne passe pas les tests => 12/30 +
 
 | 22 | 8 | 10 | 10 | 28/30 +
 => `≈18.6/20 | 2
-é
 |=========================================================================================================
 
 `Algorithme Sobriété - Pire N°5 :` +
