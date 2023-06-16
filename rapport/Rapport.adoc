@@ -400,18 +400,20 @@ divisé par 2 car ne passe pas les tests et ne réalise pas en aucun cas ce qui 
 |=========================================================================================================
 | Num Algo | Sobriété Numérique | Qualité | Consommation Electrique | Note | Classement Final
 
-| 36 |  |   |  | ?/20 | 1
+| 36 | 7 |  7 | 10 | 24/30 +
+=> `=16/20` | #*1*#
 
-| 58 |  |   |  | ?/20 | 1
+| 58 | 7 | 7  | 8 | 22/30
+ +
+=> ≈14.6 | 2
 
 |=========================================================================================================
 
 `Algorithme Sobriété - Meilleur N°36 :` +
 
 * *Sobriété Numérique :* 
-** _Justification_ : L'algorithme a une complexité linéaire O(n), ce qui signifie que le temps d'exécution augmente de manière linéaire avec la taille de l'entrée. +
-Cela indique une efficacité raisonnable et une consommation de ressources relativement stable, sans dépendance excessive à la taille de l'entrée.
-** _Exemple_ : L'algorithme traite chaque caractère de la chaîne de caractères une seule fois, en les ajoutant aux mots appropriés. La complexité linéaire garantit une consommation de ressources proportionnelle à la taille de la chaîne de caractères donnée.
+** _Justification_ : L'algorithme a une complexité quadratique O(n^2) dans le pire des cas, ce qui signifie que le temps d'exécution augmente de manière quadratique par rapport à la taille de l'entrée. +
+Cependant, cela indique tout de même une efficacité raisonnable et une consommation de ressources relativement stable, sans dépendance excessive à la taille de l'entrée.
 {emplty} +
 ** _Bonne pratique_ : L'utilisation de la méthode `sort` avec un comparateur personnalisé pour trier les mots selon l'ordre spécifié est une bonne pratique. Cela permet d'obtenir un résultat trié de manière efficace sans avoir à mettre en place un algorithme de tri personnalisé.
 ** _Point d'amélioration_ : Optimiser la manière dont les mots sont extraits de la chaîne de caractères. Actuellement, chaque caractère est vérifié individuellement pour déterminer s'il fait partie d'un mot. +
@@ -422,34 +424,47 @@ Cela pourrait être optimisé en utilisant des techniques telles que des express
 ** _Exemple_ : Les variables sont nommées de manière significative, telles que `mots`, `motCourant`, `ordre`, ce qui aide à comprendre leur rôle dans l'algorithme. De plus, la méthode `solution` et la méthode `getOrderValue` sont clairement définies, compréhensible et leur objectif est compréhensible.
 
 * *Consommation Electrique :* 
-** _Justification_ : 
-** _Exemple_ : 
+
+|===
+|*Tailles des chaînes (avec espace)*|*Indice de consommation électrique (en Watt)*
+|1 caractères|~3,49161
+|10 caractères|~5,36096
+|100 caractères|~4,52401
+|1000 caractères|~3,79703
+|===
 
 `Algorithme Sobriété - Meilleur N°58 :` +
 
 * *Sobriété Numérique :* 
-** _Justification_ : Complexité (O(n)...)
-** _Exemple_ : 
+** _Justification_ : L'algorithme a une complexité quadratique O(n^2) dans le pire des cas, ce qui signifie que le temps d'exécution augmente de manière quadratique par rapport à la taille de l'entrée. +
+Cependant, cela indique tout de même une efficacité raisonnable et une consommation de ressources relativement stable, sans dépendance excessive à la taille de l'entrée.
 {emplty} +
-** _Bonne pratique_ :
-** _Point d'amélioration_ :
+** _Bonne pratique_ : L'utilisation d'une liste pour stocker les mots et d'une boucle linéaire pour les trier selon l'ordre spécifié est une approche simple et compréhensible. + 
+De plus, l'utilisation de la classe StringBuilder pour la construction des mots est plus efficace que l'utilisation de concaténations de chaînes de caractères.
+** _Point d'amélioration_ : L'algorithme pourrait être optimisé en utilisant une table de hachage (HashMap) pour associer chaque caractère à son indice dans l'ordre spécifié. + 
+Cela éliminerait la recherche linéaire et permettrait d'obtenir l'indice directement en temps constant. En prétraitant l'ordre une seule fois, l'algorithme pourrait accéder rapidement à l'indice de chaque mot lors de la phase de tri.
 
 * *Qualité :* 
-** _Justification_ : 
-** _Exemple_ : 
+** _Justification_ :  L'utilisation de la classe Comparator et de la méthode Collections.sort() pour trier les mots en fonction de l'ordre spécifié est une bonne pratique. Le code est également bien structuré et facile à comprendre. Cependant `Codacy` a detecté : Trop  de caractére sur une même ligne.
 
 * *Consommation Electrique :* 
-** _Justification_ : 
-** _Exemple_ : 
+
+|===
+|*Tailles des chaînes (avec espace)*|*Indice de consommation électrique (en Watt)*
+|1 caractères|~3,52455
+|10 caractères|~5,70018
+|100 caractères|~5,18266
+|1000 caractères|~4,24851
+|===
 
 ==== Pire
 
 |=========================================================================================================
 | Num Algo | Sobriété Numérique | Qualité | Consommation Electrique | Note | Classement Final
 
-| 5 |  |   |  | ?/20 | 1
+| 5 |  |   |  | ?/20 | #*1*#
 
-| N°22 |  |   |  | ?/20 | 1
+| 22 |  |   |  | ?/20 | 1
 
 |=========================================================================================================
 
@@ -468,7 +483,14 @@ Cela pourrait être optimisé en utilisant des techniques telles que des express
 
 * *Consommation Electrique :* 
 ** _Justification_ : 
-** _Exemple_ : 
+
+|===
+|*Tailles des chaînes (avec espace)*|*Indice de consommation électrique (en Watt)*
+|1 caractères|~3,52455
+|10 caractères|~5,70018
+|100 caractères|~5,18266
+|1000 caractères|~4,24851
+|===
 
 `Algorithme Sobriété - Pire N°22 :` +
 
@@ -485,7 +507,14 @@ Cela pourrait être optimisé en utilisant des techniques telles que des express
 
 * *Consommation Electrique :* 
 ** _Justification_ : 
-** _Exemple_ : 
+
+|===
+|*Tailles des chaînes (avec espace)*|*Indice de consommation électrique (en Watt)*
+|1 caractères|~3,52455
+|10 caractères|~5,70018
+|100 caractères|~5,18266
+|1000 caractères|~4,24851
+|===
 
 == Illan Gabarra (1A)
 

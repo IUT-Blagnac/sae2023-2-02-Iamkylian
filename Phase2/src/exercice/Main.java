@@ -3,7 +3,9 @@ package exercice;
 public class Main {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+
+		String javaVersion = System.getProperty("java.version");
+		System.out.println("Version de Java : " + javaVersion);
 
 	}
 
