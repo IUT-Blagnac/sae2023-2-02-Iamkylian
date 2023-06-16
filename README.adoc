@@ -221,6 +221,7 @@ Voici les pré-requis pour exécuter nos codes d'évaluation.
 - link:https://www.noureddine.org/research/joular[Joular]
 - link:Phase2/src/test/TestConsoElecEtTempsExec.java[Notre outil de mesure du temps d'éxécution, et de la consommation électrique]
 - link:https://www.codacy.com/[Codacy]
+- link:https://marketplace.visualstudio.com/items?itemName=SonarSource.sonarlint-vscode[SonarLint]
 
 == Généralités, notation de la SAÉ et résultat du concours
 
